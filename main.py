@@ -6,7 +6,7 @@ from controller import NeuronController
 from loaders import Loader
 
 if __name__ == "__main__":
-    file_path = "data/ms1821_alignment_soloVPM_nocontours_neuritescorrected_aligned.json"
+    file_path = "NeuroStitcher/data/ms1821_alignment_soloVPM_nocontours_neuritescorrected_aligned.json"
     unit_orientation_origin = ["um", "RAS", "corner"]
     loader = Loader()
 
