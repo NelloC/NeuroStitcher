@@ -1,195 +1,92 @@
-import re
+import pyvista as pv
 import numpy as np
-from typing import Tuple, List, Optional
+import random
 
 
-class AllenSpaceConverter:
-    ANNOTATION_25_RAS_SHAPE = np.array([456, 528, 320], dtype=float)
-    TARGET_ORIGIN_MM_RAS_CENTER = ANNOTATION_25_RAS_SHAPE / 2 * 25e-3
-    AC_ORIGIN_VOXEL_RAS = np.array([228, 313, 113], dtype=float)
+class NeuronView:
+    def __init__(self):
+        self.plotter = pv.Plotter()
+        self.neuron_actor = None
+        self.connected_neuron_actor = None
+        self.stitch_actor = None
 
-    @staticmethod
-    def parse_unit_code(unit_code: str) -> Tuple[str, Optional[List[float]]]:
-        """Parse the unit code string."""
-        match = re.match(r"(m|mm|um)(?:\((.*)\))?$", unit_code)
-        if not match:
-            raise ValueError(f"Invalid unit code: {unit_code}")
+    def render_neuron(self, points, lines, color="black", line_width=2):
+        cells = []
+        for line in lines:
+            cells.extend([len(line)] + line.tolist())
 
-        unit, multiplier_str = match.groups()
-        multiplier = (
-            [float(x) for x in multiplier_str.split(",")]
-            if multiplier_str
-            else None
-        )
-        return unit, multiplier
+        mesh = pv.PolyData(points, lines=cells)
+        return self.plotter.add_mesh(mesh, color=color, line_width=line_width)
 
-    @staticmethod
-    def parse_orientation_code(
-        orientation_code: str,
-    ) -> Tuple[List[int], List[int]]:
-        """Parse the orientation code string."""
-        orientation_patterns = [
-            r"(R|L)(A|P)(S|I)",
-            r"(R|L)(S|I)(A|P)",
-            r"(A|P)(R|L)(S|I)",
-            r"(A|P)(S|I)(R|L)",
-            r"(S|I)(R|L)(A|P)",
-            r"(S|I)(A|P)(R|L)",
-        ]
-        dims_mapping = [
-            [0, 1, 2],
-            [0, 2, 1],
-            [1, 0, 2],
-            [1, 2, 0],
-            [2, 0, 1],
-            [2, 1, 0],
-        ]
+    def render_original_and_connected(
+        self,
+        original_points,
+        original_lines,
+        connected_points,
+        connected_lines,
+        stitch_lines,
+    ):
+        # Clear existing actors
+        self.plotter.clear()
 
-        for pattern, dims in zip(orientation_patterns, dims_mapping):
-            match = re.match(pattern, orientation_code)
-            if match:
-                flip = [0, 0, 0]
-                target_orientation = "RAS"
-                for i in range(3):
-                    flip[i] = (
-                        1
-                        if match.group(i + 1) == target_orientation[dims[i]]
-                        else -1
-                    )
-                return dims, flip
-
-        raise ValueError(f"Invalid orientation code: {orientation_code}")
-
-    @classmethod
-    def parse_origin_code(
-        cls, origin_code: str, orientation_code: str
-    ) -> np.ndarray:
-        """Parse the origin code string."""
-        if origin_code == "center":
-            return cls.TARGET_ORIGIN_MM_RAS_CENTER
-        elif origin_code == "ac":
-            return cls.AC_ORIGIN_VOXEL_RAS * 25e-3
-        elif origin_code == "corner":
-            dims, flip = cls.parse_orientation_code(orientation_code)
-            origin = np.zeros(3)
-            for i in range(3):
-                if flip[i] < 0:
-                    origin[dims[i]] = (
-                        cls.ANNOTATION_25_RAS_SHAPE[dims[i]] * 25e-3
-                    )
-            return origin
-        else:
-            raise ValueError(f"Invalid origin code: {origin_code}")
-
-    @staticmethod
-    def get_affine_unit(
-        unit: str, multiplier: Optional[List[float]]
-    ) -> np.ndarray:
-        """Get the affine transformation matrix for unit conversion."""
-        to_mm = {"m": 1e3, "mm": 1, "um": 1e-3}[unit]
-        multiplier = multiplier or [1, 1, 1]
-        multiplier += [multiplier[-1]] * (3 - len(multiplier))
-        return np.diag([to_mm * m for m in multiplier] + [1])
-
-    @staticmethod
-    def get_affine_orientation(dims: List[int], flip: List[int]) -> np.ndarray:
-        """Get the affine transformation matrix for orientation."""
-        A = np.zeros((4, 4))
-        for i in range(3):
-            A[dims[i], i] = flip[i]
-        A[3, 3] = 1
-        return A
-
-    @classmethod
-    def get_affine_origin(cls, origin_mm_ras: np.ndarray) -> np.ndarray:
-        """Get the affine transformation matrix for origin translation."""
-        origin_shift = origin_mm_ras - cls.TARGET_ORIGIN_MM_RAS_CENTER
-        return np.array(
-            [
-                [1, 0, 0, origin_shift[0]],
-                [0, 1, 0, origin_shift[1]],
-                [0, 0, 1, origin_shift[2]],
-                [0, 0, 0, 1],
-            ]
+        # Render original morphology
+        self.neuron_actor = self.render_neuron(
+            original_points, original_lines, color="black", line_width=2
         )
 
-    @classmethod
-    def to_allen_mm_ras_center(
-        cls, unit_code: str, orientation_code: str, origin_code: str
-    ) -> np.ndarray:
-        """Convert coordinates to Allen space (mm, RAS, center)."""
-        unit, multiplier = cls.parse_unit_code(unit_code)
-        dims, flip = cls.parse_orientation_code(orientation_code)
-        origin = cls.parse_origin_code(origin_code, orientation_code)
+        # Render connected morphology (excluding stitches)
+        self.connected_neuron_actor = self.render_neuron(
+            connected_points, connected_lines, color="blue", line_width=2
+        )
 
-        A_unit = cls.get_affine_unit(unit, multiplier)
-        A_reorient = cls.get_affine_orientation(dims, flip)
-        A_origin = cls.get_affine_origin(origin)
+        # Render stitches
+        self.stitch_actor = self.render_neuron(
+            connected_points, stitch_lines, color="red", line_width=3
+        )
 
-        return A_origin @ A_reorient @ A_unit
+    def render_connected_components(self, connected_components):
+        for component in connected_components:
+            # Extract coordinates and parent information
+            point_ids = component[:, 0].astype(int)
+            coords = component[:, 2:5].astype(np.float32)
+            parent_ids = component[:, 6].astype(int)
 
-    @classmethod
-    def convert_allen_space(
-        cls, from_params: List[str], to_params: List[str]
-    ) -> np.ndarray:
-        """Convert between different Allen space coordinate systems."""
-        to_standard = cls.to_allen_mm_ras_center(*from_params)
-        to_target = cls.to_allen_mm_ras_center(*to_params)
-        return np.linalg.inv(to_target) @ to_standard
+            # Create a dictionary mapping point_ids to their index
+            id_to_index = {id: index for index, id in enumerate(point_ids)}
 
+            # Create lines and identify parent and child points
+            lines = []
+            has_parent = set()
+            has_child = set()
+            for i, parent_id in enumerate(parent_ids):
+                if parent_id != -1:
+                    lines.append(
+                        [id_to_index[point_ids[i]], id_to_index[parent_id]]
+                    )
+                    has_parent.add(point_ids[i])
+                    has_child.add(parent_id)
 
-def test_to_allen_mm_ras_center():
-    """Test the to_allen_mm_ras_center method."""
-    converter = AllenSpaceConverter()
+            # Convert lines to the format expected by PyVista
+            cells = []
+            for line in lines:
+                cells.extend([2, line[0], line[1]])
 
-    # Test unit code parsing
-    assert converter.parse_unit_code("m") == ("m", None)
-    assert converter.parse_unit_code("mm(25)") == ("mm", [25.0])
-    assert converter.parse_unit_code("um(10,10,200)") == (
-        "um",
-        [10.0, 10.0, 200.0],
-    )
+            # Create the mesh for the lines
+            line_mesh = pv.PolyData(coords, lines=cells)
 
-    # Test affine unit matrix
-    A_unit = converter.get_affine_unit("um", [10, 10, 200])
-    A_unit_expected = np.diag([0.01, 0.01, 0.2, 1.0])
-    np.testing.assert_array_almost_equal(A_unit, A_unit_expected)
+            # Create a mesh for the points
+            point_mesh = pv.PolyData(coords)
 
-    # Test orientation code parsing and affine orientation matrix
-    dims, flip = converter.parse_orientation_code("PIR")
-    dims, flip = converter.parse_orientation_code("PIR")
-    assert dims == [1, 2, 0] and flip == [
-        -1,
-        1,
-        1,
-    ], f"Expected dims=[1, 2, 0] and flip=[-1, 1, 1], but got dims={dims} and flip={flip}"
-    A_reorient = converter.get_affine_orientation(dims, flip)
-    A_reorient_expected = np.array(
-        [[0, 0, 1, 0], [-1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 0, 1]]
-    )
-    np.testing.assert_array_equal(A_reorient, A_reorient_expected)
+            # Add the lines to the plotter
+            random_color = "%06x" % random.randint(0, 0xFFFFFF)
+            self.plotter.add_mesh(line_mesh, color=random_color, line_width=2)
 
-    # Test origin code parsing
-    origin_mm_ras = converter.parse_origin_code("center", "RAS")
-    np.testing.assert_array_almost_equal(
-        origin_mm_ras, np.array([5.7, 6.6, 4.0])
-    )
+        # Set up the camera for an isometric view
+        self.plotter.camera_position = "iso"
 
-    # Test full conversion
-    A = converter.to_allen_mm_ras_center("um", "PIR", "corner")
-    A_expected = np.array(
-        [
-            [0.0, 0.0, 0.001, -5.7],
-            [-0.001, 0.0, 0.0, 5.35],
-            [0.0, -0.001, 0.0, 5.15],
-            [0.0, 0.0, 0.0, 1.0],
-        ]
-    )
-    np.testing.assert_array_almost_equal(A, A_expected, decimal=3)
+    def show(self):
+        self.plotter.show()
 
-    print("All tests passed!")
-
-
-if __name__ == "__main__":
-    test_to_allen_mm_ras_center()
+    def close(self):
+        self.plotter.close()
 
