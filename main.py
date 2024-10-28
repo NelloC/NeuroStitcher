@@ -1,5 +1,5 @@
 from storage import NeuronDataStorage
-from model import NeuronModel
+from NeuronModel import NeuronModel
 from view import NeuronView
 from controller import NeuronController
 from loaders import Loader
