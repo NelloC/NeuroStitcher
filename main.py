@@ -1,9 +1,11 @@
 from storage import NeuronDataStorage
-from NeuronModel import NeuronModel
+from model import NeuronModel
 from view import NeuronView
 from controller import NeuronController
 from loaders import Loader
-from connector import NeuronConnector  # Usa NeuronConnector al posto di NeuronGraphProcessor
+from connector import NeuronConnector
+from vector_calculations import VectorCalculator
+from clustering import ClusteringManager
 
 if __name__ == "__main__":
     file_path = "data/ms1821_alignment_soloVPM_nocontours_neuritescorrected_aligned.json"
@@ -15,8 +17,12 @@ if __name__ == "__main__":
         file_path, unit_orientation_origin=unit_orientation_origin
     )
 
-    # Crea il NeuronConnector per gestire le connessioni dei componenti
-    connector = NeuronConnector(neuron_data)
+    # Inizializza VectorCalculator e ClusteringManager
+    vector_calculator = VectorCalculator()
+    clustering_manager = ClusteringManager()
+
+    # Crea il NeuronConnector passando tutti gli argomenti necessari
+    connector = NeuronConnector(neuron_data, vector_calculator, clustering_manager)
 
     # Crea il Model, View e Controller
     model = NeuronModel(neuron_data, connector)
