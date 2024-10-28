@@ -1,5 +1,5 @@
 import numpy as np
-
+from NeuronModel import NeuronModel
 
 class NeuronController:
     def __init__(self, model, view):
