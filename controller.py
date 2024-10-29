@@ -25,7 +25,7 @@ class NeuronController:
         )
 
     def visualize_components(self):
-        connected_components = self.NeuronModel.connected_swc_samples()
+        connected_components = self.model.connected_swc_samples
         self.view.render_connected_components(connected_components)
 
     def run(self):
