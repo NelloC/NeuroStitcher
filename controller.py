@@ -3,7 +3,7 @@ from NeuronModel import NeuronModel
 
 class NeuronController:
     def __init__(self, model, view):
-        self.model = model
+        self.NeuronModel = NeuronModel
         self.view = view
 
     def visualize(self):
