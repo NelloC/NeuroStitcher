@@ -29,9 +29,10 @@ class NeuronController:
         )
 
     def visualize_components(self):
-        # Converti ogni componente in un array bidimensionale
-        connected_components = [np.array(list(component)).reshape(-1, 1) for component in self.model.connected_swc_samples]
+        # Converti ogni componente in un array con tutti i dati SWC necessari
+        connected_components = self.model.get_swc_chunks()
         self.view.render_connected_components(connected_components)
+
 
 
 
