@@ -1,3 +1,10 @@
+from pyvirtualdisplay import Display
+display = Display(visible=0, size=(800, 600))
+display.start()
+
+import pyvista as pv
+pv.start_xvfb()
+
 from storage import NeuronDataStorage
 from NeuronModel import NeuronModel
 from view import NeuronView
@@ -6,12 +13,7 @@ from loaders import Loader
 from connector import NeuronConnector
 from vector_calculations import VectorCalculator
 from clustering import ClusteringManager
-# Configura un display virtuale
-from pyvirtualdisplay import Display
-display = Display(visible=0, size=(800, 600))
-display.start()
-# Avvia xvfb per PyVista
-pv.start_xvfb()
+
 
 if __name__ == "__main__":
     file_path = "data/ms1821_alignment_soloVPM_nocontours_neuritescorrected_aligned.json"
