@@ -4,7 +4,7 @@ import random
 
 class NeuronView:
     def __init__(self):
-        self.plotter = pv.Plotter()
+        self.plotter = pv.Plotter(off_screen=True)  # Modalità offscreen per Colab
         self.neuron_actor = None
         self.connected_neuron_actor = None
         self.stitch_actor = None
@@ -89,13 +89,11 @@ class NeuronView:
         print("Visualizzazione dei componenti connessi completata.")
 
     def show(self):
-        # Salva l'immagine del rendering
-        filename = "neuron_view.png"
-        self.plotter.show(screenshot=filename)
-        print(f"Immagine salvata come {filename}")
-        
-        # Visualizza l'immagine nel notebook
-        display(Image(filename))
+        # Salva l'immagine in modalità offscreen
+        screenshot_path = "/content/neuron_visualization.png"
+        self.plotter.show(auto_close=False)  # Mantenerla aperta per salvare
+        self.plotter.screenshot(screenshot_path)
+        print(f"Immagine salvata come {screenshot_path}")
 
     def close(self):
         self.plotter.close()
