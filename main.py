@@ -1,14 +1,3 @@
-from pyvirtualdisplay import Display
-import pyvista as pv
-
-# Avvia un display virtuale
-display = Display(visible=0, size=(800, 600))
-display.start()
-
-# Avvia xvfb per PyVista
-pv.start_xvfb()
-
-
 from storage import NeuronDataStorage
 from NeuronModel import NeuronModel
 from view import NeuronView
@@ -18,34 +7,50 @@ from connector import NeuronConnector
 from vector_calculations import VectorCalculator
 from clustering import ClusteringManager
 
+print("Inizio esecuzione di main.py")
 
-if __name__ == "__main__":
-    file_path = "data/ms1821_alignment_soloVPM_nocontours_neuritescorrected_aligned.json"
-    unit_orientation_origin = ["um", "RAS", "corner"]
-    loader = Loader()
+# Setup virtual display
+from pyvirtualdisplay import Display
+import pyvista as pv
+display = Display(visible=0, size=(800, 600))
+display.start()
+pv.start_xvfb()
+print("Display virtuale attivato")
 
-    # Carica i dati iniziali del neurone
-    neuron_data = loader.load_morphology_from_file(
-        file_path, unit_orientation_origin=unit_orientation_origin
-    )
+file_path = "data/ms1821_alignment_soloVPM_nocontours_neuritescorrected_aligned.json"
+unit_orientation_origin = ["um", "RAS", "corner"]
 
-    # Inizializza VectorCalculator e ClusteringManager
-    vector_calculator = VectorCalculator()
-    clustering_manager = ClusteringManager()
+# Carica i dati
+loader = Loader()
+print("Caricamento dati del neurone...")
+neuron_data = loader.load_morphology_from_file(
+    file_path, unit_orientation_origin=unit_orientation_origin
+)
+print("Dati del neurone caricati")
 
-    # Crea il NeuronConnector passando tutti gli argomenti necessari
-    connector = NeuronConnector(neuron_data, vector_calculator, clustering_manager)
+# Inizializza VectorCalculator e ClusteringManager
+vector_calculator = VectorCalculator()
+clustering_manager = ClusteringManager()
+print("VectorCalculator e ClusteringManager inizializzati")
 
-    # Crea il Model, View e Controller
-    model = NeuronModel(neuron_data, connector)
-    view = NeuronView()
-    controller = NeuronController(model, view)
+# Crea il NeuronConnector
+connector = NeuronConnector(neuron_data, vector_calculator, clustering_manager)
+print("NeuronConnector creato")
 
-    # Visualizza la morfologia originale e connessa
-    controller.visualize_components()
+# Crea il Model, View e Controller
+model = NeuronModel(neuron_data, connector)
+view = NeuronView()
+controller = NeuronController(model, view)
+print("Model, View e Controller creati")
 
-    # Mostra la visualizzazione
-    controller.run()
+# Visualizza la morfologia originale e connessa
+print("Visualizzazione dei componenti della morfologia...")
+controller.visualize_components()
 
-    # Chiudi la visualizzazione quando finito
-    controller.close()
+# Mostra la visualizzazione
+print("Esecuzione della visualizzazione...")
+controller.run()
+
+# Chiudi la visualizzazione quando finito
+controller.close()
+print("Visualizzazione completata e chiusa")
