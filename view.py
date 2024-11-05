@@ -89,7 +89,13 @@ class NeuronView:
         print("Visualizzazione dei componenti connessi completata.")
 
     def show(self):
-        self.plotter.show()
+        # Salva l'immagine del rendering
+        filename = "neuron_view.png"
+        self.plotter.show(screenshot=filename)
+        print(f"Immagine salvata come {filename}")
+        
+        # Visualizza l'immagine nel notebook
+        display(Image(filename))
 
     def close(self):
         self.plotter.close()
