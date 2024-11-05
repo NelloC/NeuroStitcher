@@ -34,8 +34,6 @@ class NeuronController:
         self.view.render_connected_components(connected_components)
 
 
-
-
     def run(self):
         # Avvia la visualizzazione
         self.view.show()
