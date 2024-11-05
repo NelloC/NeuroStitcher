@@ -2,7 +2,6 @@ import pyvista as pv
 import numpy as np
 import random
 
-
 class NeuronView:
     def __init__(self):
         self.plotter = pv.Plotter()
@@ -45,44 +44,49 @@ class NeuronView:
         )
 
     def render_connected_components(self, connected_components):
-        for component in connected_components:
-            # Extract coordinates and parent information
-            point_ids = component[:, 0].astype(int)
-            coords = component[:, 2:5].astype(np.float32)
-            parent_ids = component[:, 6].astype(int)
+        print("Inizio visualizzazione dei componenti connessi...")
+        
+        for i, component in enumerate(connected_components):
+            print(f"Rendering componente {i + 1} di {len(connected_components)} con {len(component)} punti...")
+            
+            # Controlla se il componente ha dati prima di continuare
+            if len(component) == 0:
+                print(f"Componente {i + 1} è vuoto, saltato.")
+                continue
 
-            # Create a dictionary mapping point_ids to their index
+            # Estrai gli ID dei punti, le coordinate e gli ID dei genitori
+            try:
+                point_ids = component[:, 0].astype(int)
+                coords = component[:, 2:5].astype(np.float32)
+                parent_ids = component[:, 6].astype(int)
+            except IndexError as e:
+                print(f"Errore nell'accesso ai dati del componente {i + 1}: {e}")
+                continue
+
+            # Mappa gli ID dei punti per creare linee di connessione
             id_to_index = {id: index for index, id in enumerate(point_ids)}
-
-            # Create lines and identify parent and child points
             lines = []
-            has_parent = set()
-            has_child = set()
-            for i, parent_id in enumerate(parent_ids):
-                if parent_id != -1:
-                    lines.append(
-                        [id_to_index[point_ids[i]], id_to_index[parent_id]]
-                    )
-                    has_parent.add(point_ids[i])
-                    has_child.add(parent_id)
+            for idx, parent_id in enumerate(parent_ids):
+                if parent_id != -1 and parent_id in id_to_index:
+                    lines.append([id_to_index[point_ids[idx]], id_to_index[parent_id]])
 
-            # Convert lines to the format expected by PyVista
+            # Conversione in formato PyVista
             cells = []
             for line in lines:
                 cells.extend([2, line[0], line[1]])
 
-            # Create the mesh for the lines
+            # Creazione delle mesh di linee e punti
             line_mesh = pv.PolyData(coords, lines=cells)
-
-            # Create a mesh for the points
             point_mesh = pv.PolyData(coords)
 
-            # Add the lines to the plotter
-            random_color = "%06x" % random.randint(0, 0xFFFFFF)
+            # Renderizza il componente con un colore casuale per distinguerlo
+            random_color = "#%06x" % random.randint(0, 0xFFFFFF)
             self.plotter.add_mesh(line_mesh, color=random_color, line_width=2)
+            print(f"Componente {i + 1} renderizzato con colore {random_color}")
 
-        # Set up the camera for an isometric view
+        # Imposta la vista isometrica per la visualizzazione
         self.plotter.camera_position = "iso"
+        print("Visualizzazione dei componenti connessi completata.")
 
     def show(self):
         self.plotter.show()
