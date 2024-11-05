@@ -1,12 +1,7 @@
-# Installa Xvfb e pyvirtualdisplay
-!apt-get install -y xvfb
-!pip install pyvirtualdisplay
-
-# Importa pyvista e avvia il display virtuale
 from pyvirtualdisplay import Display
 import pyvista as pv
 
-# Inizia il display virtuale
+# Avvia un display virtuale
 display = Display(visible=0, size=(800, 600))
 display.start()
 
