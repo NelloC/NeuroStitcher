@@ -1,9 +1,18 @@
+# Installa Xvfb e pyvirtualdisplay
+!apt-get install -y xvfb
+!pip install pyvirtualdisplay
+
+# Importa pyvista e avvia il display virtuale
 from pyvirtualdisplay import Display
+import pyvista as pv
+
+# Inizia il display virtuale
 display = Display(visible=0, size=(800, 600))
 display.start()
 
-import pyvista as pv
+# Avvia xvfb per PyVista
 pv.start_xvfb()
+
 
 from storage import NeuronDataStorage
 from NeuronModel import NeuronModel
