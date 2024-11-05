@@ -89,11 +89,7 @@ class NeuronView:
         print("Visualizzazione dei componenti connessi completata.")
 
     def show(self):
-        # Salva l'immagine in modalità offscreen
-        screenshot_path = "/content/drive/MyDrive/Thesis/GitHub/github ultimo/neuron.png"
-        self.plotter.show(auto_close=False)  # Mantenerla aperta per salvare
-        self.plotter.screenshot(screenshot_path)
-        print(f"Immagine salvata come {screenshot_path}")
+        self.plotter.show()
 
     def close(self):
         self.plotter.close()

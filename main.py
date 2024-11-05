@@ -7,20 +7,11 @@ from loaders import Loader
 from connector import NeuronConnector
 from vector_calculations import VectorCalculator
 from clustering import ClusteringManager
-from IPython.display import Image, display  # Per visualizzare l'immagine in Colab
-import subprocess
 
-# Installa e avvia xvfb per il rendering offscreen
+# Inizio script principale
 print("Inizio esecuzione di main.py")
-print("Installazione e avvio di Xvfb...")
 
-subprocess.call(["apt-get", "install", "-y", "xvfb"])
-os.system("Xvfb :99 -screen 0 1024x768x24 &")
-os.environ["DISPLAY"] = ":99"
-
-print("Display virtuale attivato")
-
-# Caricamento dei dati
+# Caricamento dei dati del neurone
 print("Caricamento dati del neurone...")
 file_path = "data/ms1821_alignment_soloVPM_nocontours_neuritescorrected_aligned.json"
 unit_orientation_origin = ["um", "RAS", "corner"]
@@ -31,6 +22,7 @@ neuron_data = loader.load_morphology_from_file(
 )
 print("Dati del neurone caricati")
 
+# Inizializzazione dei componenti principali
 print("VectorCalculator e ClusteringManager inizializzati")
 vector_calculator = VectorCalculator()
 clustering_manager = ClusteringManager()
@@ -43,15 +35,16 @@ model = NeuronModel(neuron_data, connector)
 view = NeuronView()
 controller = NeuronController(model, view)
 
+# Visualizzazione dei componenti della morfologia
 print("Visualizzazione dei componenti della morfologia...")
 controller.visualize_components()
 
+# Esecuzione della visualizzazione
 print("Esecuzione della visualizzazione...")
 controller.run()
 
-# Visualizza l'immagine salvata in Colab
-display(Image("/content/drive/MyDrive/Thesis/GitHub/github ultimo/neuron.png"))
-
 # Chiudi la visualizzazione
 controller.close()
+
+
 
