@@ -50,7 +50,7 @@ print("Esecuzione della visualizzazione...")
 controller.run()
 
 # Visualizza l'immagine salvata in Colab
-display(Image("/content/neuron_visualization.png"))
+display(Image("/content/drive/MyDrive/Thesis/GitHub/github ultimo/neuron.png"))
 
 # Chiudi la visualizzazione
 controller.close()
