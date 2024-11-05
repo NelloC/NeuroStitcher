@@ -8,12 +8,13 @@ from connector import NeuronConnector
 from vector_calculations import VectorCalculator
 from clustering import ClusteringManager
 from IPython.display import Image, display  # Per visualizzare l'immagine in Colab
+import subprocess
 
 # Installa e avvia xvfb per il rendering offscreen
 print("Inizio esecuzione di main.py")
 print("Installazione e avvio di Xvfb...")
 
-!apt-get install -y xvfb > /dev/null 2>&1
+subprocess.call(["apt-get", "install", "-y", "xvfb"])
 os.system("Xvfb :99 -screen 0 1024x768x24 &")
 os.environ["DISPLAY"] = ":99"
 
