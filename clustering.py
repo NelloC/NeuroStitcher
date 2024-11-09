@@ -4,10 +4,7 @@ from sklearn.neighbors import NearestNeighbors
 from storage import NeuronDataStorage  # Importa la tua classe NeuronDataStorage
 
 class ClusteringManager:
-    def run_dbscan(self, neuron_data: NeuronDataStorage, min_samples=10, k=10, percentile=25):
-        # Estrai i punti direttamente da neuron_data
-        points = neuron_data.points
-
+    def run_dbscan(self, points, min_samples=6, k=50, percentile=25):
         # Esegue DBSCAN con parametri eps e density_threshold stimati dinamicamente
         eps_estimate = self.estimate_eps(points, k=k)
         dbscan = DBSCAN(eps=eps_estimate, min_samples=min_samples)
@@ -21,7 +18,7 @@ class ClusteringManager:
         
         return labels, unique_labels, counts, tipo_struttura
 
-    def estimate_eps(self, points, k=10):
+    def estimate_eps(self, points, k=50):
         # Stima eps per DBSCAN usando la distanza dal k-esimo vicino più vicino
         neighbors = NearestNeighbors(n_neighbors=k).fit(points)
         distances, _ = neighbors.kneighbors(points)
@@ -41,13 +38,13 @@ class ClusteringManager:
         distance_factor = 0.0
         
         if avg_cluster_size >= density_threshold:
-            num_neighbors = max(3, default_min_samples - int((avg_cluster_size - density_threshold) / density_threshold * 3))
+            num_neighbors = max(10, default_min_samples - int((avg_cluster_size - density_threshold) / density_threshold * 10))
             distance_factor = max(0.1, 0.9 - (avg_cluster_size - density_threshold) / density_threshold * 0.1)
         else:
-            num_neighbors = min(5, default_min_samples + int((density_threshold - avg_cluster_size) / density_threshold * 5))
+            num_neighbors = min(20, default_min_samples + int((density_threshold - avg_cluster_size) / density_threshold * 20))
             distance_factor = min(0.9, 0.1 + (density_threshold - avg_cluster_size) / density_threshold * 0.1)
         
-        num_neighbors = min(5, max(3, num_neighbors))
+        num_neighbors = min(20, max(10, num_neighbors))
         distance_factor = min(0.9, max(0.1, distance_factor))
         
         return num_neighbors, distance_factor

@@ -18,7 +18,7 @@ class NeuronDataStorage:
         self.space_converter = AllenSpaceConverter()
 
     def get_type_to_id_mapping(self) -> Dict[str, int]:
-        type_to_id = {"soma": 1, "axon": 2, "dendrite": 3, "apical": 4}
+        type_to_id = {"soma": 1, "axon": 2, "dendrite": 3, "apical": 4, "stitch":5}
         for k, v in self.custom_types.items():
             type_to_id[k] = v["id"]
         return type_to_id
@@ -72,9 +72,13 @@ class NeuronDataStorage:
         warped_points[:, 3] = np.linalg.det(A) ** (1 / 3) * self.points[:, 3]
         self.points = warped_points
 
-    def add_point(self, point: np.ndarray) -> int:
+    def add_point(self, point):
+        if len(point) == 3:  # Se il punto ha solo 3 dimensioni (x, y, z)
+            # Aggiungi un'etichetta di default o un'altra colonna (es. tipo neurite)
+            point = np.append(point, [0])  # Puoi cambiare 0 con un valore appropriato
         self.points = np.vstack((self.points, point))
-        return len(self.points) - 1
+        return len(self.points) - 1  # Indice del nuovo punto aggiunto
+
 
     def add_line(
         self,
@@ -88,6 +92,30 @@ class NeuronDataStorage:
             [tp, first_point_idx, num_points, parent_line_id, neg_offset]
         )
         return len(self.lines) - 1
+    
+    def remove_point(self, point_idx):
+        """
+        Invalida un punto specifico.
+        """
+        if 0 <= point_idx < len(self.points):
+            if not np.isnan(self.points[point_idx]).all():
+                self.points[point_idx] = [np.nan, np.nan, np.nan, np.nan]  # Invalida
+                print(f"[INFO] Punto {point_idx} rimosso")
+            else:
+                print(f"[WARN] Punto {point_idx} già invalido")
+        else:
+            print(f"[WARN] Punto {point_idx} non valido o indice fuori range")
+
+
+    def remove_line(self, line_idx):
+        if 0 <= line_idx < len(self.lines):
+            self.lines.pop(line_idx)  # Rimuove completamente la linea
+            print(f"[INFO] Linea {line_idx} rimossa con successo.")
+        else:
+            print(f"[WARN] Indice della linea {line_idx} non valido.")
+
+
+
 
     def add_neurite_type(self, geom: str, attrs: Dict[str, Any]) -> int:
         max_type_id = max(ctype["id"] for ctype in self.custom_types.values())

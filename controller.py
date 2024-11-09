@@ -12,12 +12,16 @@ class NeuronController:
         original_lines = self.model.get_lines()
 
         # Esegue il collegamento dei componenti
+        print("Inizio visualizzazione")
         self.model.connect_components()
 
         # Ottiene i punti e le linee connessi
         connected_points = self.model.get_connected_points()
         connected_lines = self.model.get_connected_lines()
+        print("Linee connesse ottenute")
         stitch_lines = self.model.get_stitch_lines()
+        print("Linee di stitching ottenute")
+        print("Visualizzazione completata")
 
         # Visualizza i dati originali e connessi
         self.view.render_original_and_connected(

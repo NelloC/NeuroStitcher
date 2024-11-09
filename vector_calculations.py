@@ -4,33 +4,50 @@ from scipy.interpolate import UnivariateSpline
 from scipy.ndimage import gaussian_filter, gaussian_filter1d
 from storage import NeuronDataStorage  # Assicurati di avere la classe NeuronDataStorage importata
 
+
 class VectorCalculator:
-    def calculate_growth_vector(self, neuron_data: NeuronDataStorage, line_idx=None, sigma=1.0, smoothing_method='adaptive', window_size=10, n_components=2):
-        """
-        Calcola il vettore di crescita usando la PCA sui punti smoothed.
-        """
-        points = neuron_data.points if line_idx is None else neuron_data.points[line_idx]
-
-        if points.shape[0] < 2:
+    def calculate_growth_vector(self, points, smoothing_method='adaptive', sigma=1.0, window_size=10, **kwargs):
+        if points.shape[0] < 2:  # PCA richiede almeno 2 punti con variazione
+            print("[DEBUG] Punti insufficienti per PCA.")
             return np.zeros(3)
-        
-        points = self.filter_out_noise(points)
-        points = self.apply_smoothing(points, smoothing_method, sigma, window_size)
-        significant_points = points[-window_size:]
-        
-        pca = PCA(n_components=n_components)
-        pca.fit(significant_points)
-        growth_vector = pca.components_[0]
-        
-        # Calcola direzione media
-        avg_direction = np.mean(np.diff(significant_points, axis=0), axis=0)
-        avg_direction /= np.linalg.norm(avg_direction) if np.linalg.norm(avg_direction) != 0 else 1
-        
-        return growth_vector / np.linalg.norm(growth_vector) if np.linalg.norm(growth_vector) != 0 else np.zeros(3)
 
+        # Debug punti originali
+        #print(f"[DEBUG] Punti originali prima dello smoothing: {points}")
+        
+        # Applica lo smoothing
+        smoothed_points = self.apply_smoothing(points, method=smoothing_method, sigma=sigma, window_size=window_size)
+        
+        # Debug punti smoothed
+        #print(f"[DEBUG] Punti smoothed: {smoothed_points}")
+        
+        if smoothed_points.shape[0] < 2:  # PCA richiede almeno 2 punti con variazione anche dopo lo smoothing
+            print("[DEBUG] Punti insufficienti dopo lo smoothing.")
+            return np.zeros(3)
+
+        # Calcolo del growth vector tramite PCA
+        pca = PCA(n_components=2)
+        try:
+            pca.fit(smoothed_points)
+            growth_vector = pca.components_[0]
+            #print(f"[DEBUG] Growth Vector calcolato: {growth_vector}")
+            return growth_vector[:3] #/ np.linalg.norm(growth_vector) if np.linalg.norm(growth_vector) != 0 else np.zeros(3)
+        except Exception as e:
+            print(f"[ERROR] Errore durante il calcolo PCA: {e}")
+            return np.zeros(3)
+    
     def calculate_angle_between_vectors(self, v1, v2):
+        # Assicurati che entrambi i vettori abbiano dimensioni 3
+        v1 = v1[:3] if len(v1) > 3 else v1
+        v2 = v2[:3] if len(v2) > 3 else v2
+        
         dot_product = np.dot(v1, v2)
-        angle = np.arccos(np.clip(dot_product / (np.linalg.norm(v1) * np.linalg.norm(v2)), -1.0, 1.0))
+        norm_v1 = np.linalg.norm(v1)
+        norm_v2 = np.linalg.norm(v2)
+
+        if norm_v1 == 0 or norm_v2 == 0:
+            return 0.0  # Restituisce 0 gradi se uno dei vettori è nullo
+
+        angle = np.arccos(np.clip(dot_product / (norm_v1 * norm_v2), -1.0, 1.0))
         return np.degrees(angle)
 
     def calculate_direction_vector(self, point, neighbor_point):
@@ -39,10 +56,16 @@ class VectorCalculator:
         return direction_vector / norm if norm != 0 else np.zeros(3)
 
     def calculate_curvature_change(self, growth_vector, neighbor_growth_vector):
-        norm_growth_vector = growth_vector / np.linalg.norm(growth_vector)
-        norm_neighbor_growth_vector = neighbor_growth_vector / np.linalg.norm(neighbor_growth_vector)
+        # Assicurati che entrambi i vettori abbiano 3 dimensioni
+        growth_vector = growth_vector[:3]  # Prendi solo le prime 3 componenti
+        neighbor_growth_vector = neighbor_growth_vector[:3]
+
+        norm_growth_vector = growth_vector / np.linalg.norm(growth_vector) if np.linalg.norm(growth_vector) != 0 else np.zeros(3)
+        norm_neighbor_growth_vector = neighbor_growth_vector / np.linalg.norm(neighbor_growth_vector) if np.linalg.norm(neighbor_growth_vector) != 0 else np.zeros(3)
+        
         dot_product = np.dot(norm_growth_vector, norm_neighbor_growth_vector)
         return np.arccos(np.clip(dot_product, -1.0, 1.0))
+
 
     # Funzioni ausiliarie per smoothing
     def apply_smoothing(self, points, method='adaptive', sigma=1.0, window_size=3):
@@ -70,15 +93,30 @@ class VectorCalculator:
         return smoothed_points
 
     def adaptive_smoothing(self, points, min_sigma=0.5, max_sigma=2.0):
+        if points.shape[0] < 3:
+            print("[DEBUG] Punti insufficienti per lo smoothing, restituisco i punti originali.")
+            return points
+
+        # Calcolo della curvatura e del valore dinamico per sigma
         curvatures = np.gradient(np.gradient(points, axis=0), axis=0)
         curvature_magnitude = np.linalg.norm(curvatures, axis=1)
+
+        if np.allclose(curvature_magnitude.max(), curvature_magnitude.min()):
+            print("[DEBUG] Curvature costante, nessun smoothing adattivo applicato.")
+            return points  # Nessuna variazione significativa
+
         norm_curvature = (curvature_magnitude - curvature_magnitude.min()) / (curvature_magnitude.max() - curvature_magnitude.min())
         adaptive_sigma = min_sigma + (max_sigma - min_sigma) * norm_curvature
 
         smoothed_points = np.zeros_like(points)
-        for i in range(points.shape[1]):
-            smoothed_points[:, i] = gaussian_filter(points[:, i], sigma=adaptive_sigma[i])
+        for i in range(points.shape[1]):  # Loop per ogni dimensione (x, y, z)
+            smoothed_points[:, i] = [
+                gaussian_filter1d(points[:, i], sigma=sigma_value)[idx] 
+                for idx, sigma_value in enumerate(adaptive_sigma)
+            ]
+
         return smoothed_points
+
 
     def smooth_points(self, points, sigma=1.0):
         smoothed_points = np.zeros_like(points)

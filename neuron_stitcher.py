@@ -15,7 +15,7 @@ class NeuronStitcher:
         self.vector_calculator = VectorCalculator()
         self.clustering_manager = ClusteringManager()
         self.attractor_points_manager = AttractorPointsManager(self.vector_calculator)
-        self.stitching_manager = StitchingManager(self.vector_calculator, self.clustering_manager, self.attractor_points_manager)
+        self.stitching_manager = StitchingManager(self.vector_calculator, self.clustering_manager, self.attractor_points_manager, self.neuron_data)
 
         # Assegna l'origine e orientamento unitario
         self.unit_orientation_origin = unit_orientation_origin
