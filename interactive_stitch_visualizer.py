@@ -93,7 +93,10 @@ class StitchVisualizer:
                 value='EN',
                 inline=True
             ),
-            dcc.Graph(id='neuron-plot'),
+            dcc.Graph(
+                id='neuron-plot',
+                style={'height': '800px', 'width': '100%'}  # Altezza aumentata e larghezza adattata
+            ),
             html.Div(id='candidate-info', style={'marginTop': 10}),
             html.Div([
                 html.Button(id='toggle-clusters-btn', n_clicks=0, style={'backgroundColor': 'purple', 'color': 'white'}),
@@ -107,26 +110,7 @@ class StitchVisualizer:
                 html.Button(id='accept-btn', n_clicks=0, style={'backgroundColor': 'green', 'color': 'white'}),
                 html.Button(id='reject-btn', n_clicks=0, style={'backgroundColor': 'red', 'color': 'white'}),
             ], style={'marginTop': 10, 'display': 'flex', 'gap': '10px'}),
-            dcc.Store(id='key-event', data=None),  # Memorizza l'evento da tastiera
 
-            html.Script('''
-                let isKeyboardInputActive = false;
-                document.addEventListener('keydown', function(event) {
-                    if (!isKeyboardInputActive) return;
-                    const keyMapping = {
-                        'Enter': 'accept-btn',
-                        'Backspace': 'reject-btn',
-                        'ArrowRight': 'next-btn',
-                        'ArrowLeft': 'prev-btn'
-                    };
-                    if (keyMapping[event.key]) {
-                        const store = document.querySelector('#key-event');
-                        const data = {key: keyMapping[event.key]};
-                        store.dispatchEvent(new CustomEvent('data', { detail: data }));
-                        store.setAttribute('data-key', data.key);  // Memorizza nel `Store`
-                    }
-                });
-            ''')
         ])
 
         self.setup_callbacks()
@@ -147,13 +131,13 @@ class StitchVisualizer:
             Input('toggle-growth-btn', 'n_clicks'),
             Input('toggle-attractors-btn', 'n_clicks')
         )(self.update_button_labels)
-
+        """
         # Callback per catturare eventi tastiera
         self.app.callback(
             Output('key-event', 'data'),
             Input('keyboard-input-active', 'data')
         )(self.toggle_keyboard_input)
-
+        """
         # Callback unificato
         self.app.callback(
             Output('neuron-plot', 'figure'),
@@ -167,22 +151,22 @@ class StitchVisualizer:
             Input('toggle-clusters-btn', 'n_clicks'),
             Input('toggle-growth-btn', 'n_clicks'),
             Input('toggle-attractors-btn', 'n_clicks'),
-            Input('key-event', 'data'),  # Ascolta gli eventi tastiera
             State('language-selector', 'value')
         )(self.unified_callback)
 
+    """
     def toggle_keyboard_input(n_clicks):
-        """
-        Gestisce l'attivazione e la disattivazione dell'input da tastiera.
-        """
+
+      #  Gestisce l'attivazione e la disattivazione dell'input da tastiera.
+
         if n_clicks and n_clicks % 2 == 1:
             return True  # Input attivo
         return False  # Input disattivo
 
     def capture_key_event(self, key_data):
-        """
-        Mappa i tasti premuti ai pulsanti Dash corrispondenti.
-        """
+        
+        #Mappa i tasti premuti ai pulsanti Dash corrispondenti.
+
         key_mapping = {
             'accept-btn': 'accept-btn',
             'reject-btn': 'reject-btn',
@@ -192,7 +176,7 @@ class StitchVisualizer:
         print(f"[DEBUG] Key Event Captured: {key_data}")
         return key_mapping.get(key_data, no_update)
 
-
+    """
     def update_button_labels(self, language, clusters_clicks, growth_clicks, attractors_clicks):
         toggle_clusters_label = self.translations[language]["activate_clusters"] if clusters_clicks % 2 == 0 else self.translations[language]["deactivate_clusters"]
         toggle_growth_label = self.translations[language]["activate_growth"] if growth_clicks % 2 == 0 else self.translations[language]["deactivate_growth"]
@@ -441,15 +425,16 @@ class StitchVisualizer:
 
 
     def unified_callback(self, next_clicks, prev_clicks, accept_clicks, reject_clicks, manual_clicks, click_data,
-                        toggle_clusters_clicks, toggle_growth_clicks, toggle_attractors_clicks, key_event, language):
+                        toggle_clusters_clicks, toggle_growth_clicks, toggle_attractors_clicks, language):
         ctx = dash.callback_context
         trigger = ctx.triggered[0]['prop_id'].split('.')[0] if ctx.triggered else None
 
         # Priorità agli eventi da tastiera
+        """
         if key_event:
             trigger = key_event  # Sovrascrive il trigger se esiste un evento tastiera
         print(f"[DEBUG] Trigger: {trigger}, Manual Mode: {self.manual_mode_active}")
-
+        """
         # Controllo degli stati dei toggle
         show_clusters = toggle_clusters_clicks % 2 != 0
         show_growth = toggle_growth_clicks % 2 != 0

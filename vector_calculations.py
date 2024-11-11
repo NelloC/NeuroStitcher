@@ -8,7 +8,7 @@ from storage import NeuronDataStorage  # Assicurati di avere la classe NeuronDat
 class VectorCalculator:
     def calculate_growth_vector(self, points, smoothing_method='adaptive', sigma=1.0, window_size=10, **kwargs):
         if points.shape[0] < 2:  # PCA richiede almeno 2 punti con variazione
-            print("[DEBUG] Punti insufficienti per PCA.")
+            #print("[DEBUG] Punti insufficienti per PCA.")
             return np.zeros(3)
 
         # Debug punti originali
@@ -21,7 +21,7 @@ class VectorCalculator:
         #print(f"[DEBUG] Punti smoothed: {smoothed_points}")
         
         if smoothed_points.shape[0] < 2:  # PCA richiede almeno 2 punti con variazione anche dopo lo smoothing
-            print("[DEBUG] Punti insufficienti dopo lo smoothing.")
+            #print("[DEBUG] Punti insufficienti dopo lo smoothing.")
             return np.zeros(3)
 
         # Calcolo del growth vector tramite PCA
@@ -94,7 +94,7 @@ class VectorCalculator:
 
     def adaptive_smoothing(self, points, min_sigma=0.5, max_sigma=2.0):
         if points.shape[0] < 3:
-            print("[DEBUG] Punti insufficienti per lo smoothing, restituisco i punti originali.")
+            #print("[DEBUG] Punti insufficienti per lo smoothing, restituisco i punti originali.")
             return points
 
         # Calcolo della curvatura e del valore dinamico per sigma
@@ -102,7 +102,7 @@ class VectorCalculator:
         curvature_magnitude = np.linalg.norm(curvatures, axis=1)
 
         if np.allclose(curvature_magnitude.max(), curvature_magnitude.min()):
-            print("[DEBUG] Curvature costante, nessun smoothing adattivo applicato.")
+            #print("[DEBUG] Curvature costante, nessun smoothing adattivo applicato.")
             return points  # Nessuna variazione significativa
 
         norm_curvature = (curvature_magnitude - curvature_magnitude.min()) / (curvature_magnitude.max() - curvature_magnitude.min())

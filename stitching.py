@@ -11,9 +11,9 @@ class StitchingManager:
 
         # Inizializza i pesi
         self.weights = {
-            "distance": 0.3,
-            "growth": 0.15,
-            "direction": 0.15,
+            "distance": 0.4,
+            "growth": 0.2,
+            "direction": 0.2,
             "curvature": 0.2
         }
 
@@ -35,8 +35,9 @@ class StitchingManager:
             neighbor_growth_vectors = attractor_info["neighbor_growth_vectors"]
             direction_vectors = attractor_info["direction_vectors"]
             distances = attractor_info["distances"]
-
-            endings = self.get_endings(piece_id)
+            piece_points = np.array([self.neuron_data.points[idx][:3] for idx in piece_id])
+            endings = [piece_points[0], piece_points[-1]]  # Modificato per coerenza con AttractorPointsManager
+            #endings = self.get_endings(piece_id)
             for ending in endings:
                 valid_distances = distances[distances > 0]
                 if valid_distances.size == 0:
@@ -80,7 +81,7 @@ class StitchingManager:
 
                         if score < best_score:
                             best_score = score
-                            best_candidate = (ending[0], np.array(neighbor_point[:3]))
+                            best_candidate = (ending, np.array(neighbor_point[:3]))
 
                 if best_candidate:
                     if piece_id_tuple not in best_stitches:
@@ -159,12 +160,11 @@ class StitchingManager:
 
     def get_endings(self, piece_id):
         """
-        Trova i punti iniziali e finali (endings) per un dato piece_id.
+        Ritorna gli ending points come singoli punti (iniziale e finale).
         """
         endings = []
         for line_id in piece_id:
             if line_id < 0 or line_id >= len(self.neuron_data.lines):
-                #print(f"[ERROR] line_id {line_id} out of range. Skipping.")
                 continue  # Evita errori di indice
             
             line = self.neuron_data.lines[line_id]
@@ -173,10 +173,8 @@ class StitchingManager:
             starting_point = self.neuron_data.points[line[1]][:3]
             ending_point = self.neuron_data.points[line[1] + line[2] - 1][:3]
             
-            endings.append((starting_point, ending_point))
-
-            # Debug per verificare i punti trovati
-            print(f"[DEBUG] Punti iniziale e finale per line_id {line_id}: iniziale {starting_point}, finale {ending_point}")
+            endings.append(starting_point)
+            endings.append(ending_point)
             
         return endings
 
