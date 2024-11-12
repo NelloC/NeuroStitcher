@@ -91,10 +91,10 @@ NeuroStitch/
 │   └── view.py               # Interface views and visualization helpers
 ├── venv/                     # Virtual environment (optional)
 ├── README.md                 # Documentation
-├── requirements.txt          # Python dependencies
-└── LICENSE                   # License information
 
 
+
+NeuroStitch/ ├── assets/ # Static files for the interface ├── data/ # Sample neuron datasets ├── NeuroStitcher/ # Main source directory │ ├── attractor_points.py # Handles attractor points calculations │ ├── clustering.py # DBSCAN and clustering utilities │ ├── connector.py # Establishes connections between neuron segments │ ├── controller.py # Controls the stitching process │ ├── debug_components.py # Debug utilities for development │ ├── interactive_stitch_visualizer.py # 3D visualization tool │ ├── loaders.py # Loading different data formats (e.g., JSON, SWC) │ ├── main.py # Entry point of the application │ ├── neuron_stitcher.py # Main stitching logic │ ├── stitching.py # Stitching manager with scoring │ ├── storage.py # Data storage utilities for neuron data │ ├── utils.py # General utilities for computation │ ├── vector_calculations.py # Growth vector and direction vector calculations │ └── view.py # Interface views and visualization helpers ├── venv/ # Virtual environment (optional) ├── README.md # Documentation
 ## Contributing
 
 We welcome contributions to enhance **NeuroStitch**! Here’s how you can contribute:
