@@ -115,6 +115,8 @@ We welcome contributions to enhance **NeuroStitch**! Here’s how you can contri
 5. **Open a Pull Request** and describe your changes.
 
 
-##Acknowledgments
-NeuroStitch was developed with support from the Laboratory of Anatomy, Histology, and Neuroscience at the Universidad Autónoma de Madrid, which provided invaluable experimental datasets for testing and refining the tool.
+## Acknowledgments
+
+
+NeuroStitch was developed with support from the Laboratory of Anatomy, Histology, and Neuroscience at the Universidad Autónoma de Madrid, which provided invaluable experimental datasets for testing and refining the tool. The supervision is conducted at Politecnico di Milano.
 
