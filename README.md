@@ -70,27 +70,32 @@ Enhance your workflow with these shortcuts:
 3. **Manual Review and Stitching**: Review the suggested connections in manual mode and accept or reject them using keyboard shortcuts.
 4. **Export Results**: Save the stitched neuron reconstruction to a file for further analysis or visualization.
 
-      ```plaintext
-      NeuroStitch/
-      ├── assets/                   # Static files for the interface
-      ├── data/                     # Sample neuron datasets
-      ├── NeuroStitcher/            # Main source directory
-      │   ├── attractor_points.py   # Handles attractor points calculations
-      │   ├── clustering.py         # DBSCAN and clustering utilities
-      │   ├── connector.py          # Establishes connections between neuron segments
-      │   ├── controller.py         # Controls the stitching process
-      │   ├── debug_components.py   # Debug utilities for development
-      │   ├── interactive_stitch_visualizer.py  # 3D visualization tool
-      │   ├── loaders.py            # Loading different data formats (e.g., JSON, SWC)
-      │   ├── main.py               # Entry point of the application
-      │   ├── neuron_stitcher.py    # Main stitching logic
-      │   ├── stitching.py          # Stitching manager with scoring
-      │   ├── storage.py            # Data storage utilities for neuron data
-      │   ├── utils.py              # General utilities for computation
-      │   ├── vector_calculations.py # Growth vector and direction vector calculations
-      │   └── view.py               # Interface views and visualization helpers
-      ├── venv/                     # Virtual environment (optional)
-      ├── README.md                 # Documentation
+## Project Overview
+
+  The NeuroStitch project is organized into the following directory structure:
+    
+    
+    ```plaintext
+    NeuroStitch/
+    ├── assets/                   # Static files for the interface
+    ├── data/                     # Sample neuron datasets
+    ├── NeuroStitcher/            # Main source directory
+    │   ├── attractor_points.py   # Handles attractor points calculations
+    │   ├── clustering.py         # DBSCAN and clustering utilities
+    │   ├── connector.py          # Establishes connections between neuron segments
+    │   ├── controller.py         # Controls the stitching process
+    │   ├── debug_components.py   # Debug utilities for development
+    │   ├── interactive_stitch_visualizer.py  # 3D visualization tool
+    │   ├── loaders.py            # Loading different data formats (e.g., JSON, SWC)
+    │   ├── main.py               # Entry point of the application
+    │   ├── neuron_stitcher.py    # Main stitching logic
+    │   ├── stitching.py          # Stitching manager with scoring
+    │   ├── storage.py            # Data storage utilities for neuron data
+    │   ├── utils.py              # General utilities for computation
+    │   ├── vector_calculations.py # Growth vector and direction vector calculations
+    │   └── view.py               # Interface views and visualization helpers
+    ├── venv/                     # Virtual environment (optional)
+    ├── README.md                 # Documentation
 
 
 ## Contributing
