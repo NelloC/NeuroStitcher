@@ -8,7 +8,7 @@ class AttractorPointsManager:
         self.vector_calculator = vector_calculator
         self.kdtree = None
 
-    def calculate_attractor_points(self, neuron_data, pieces, clustering_manager, window_size=7):
+    def calculate_attractor_points(self, neuron_data, pieces, clustering_manager, window_size=5):
         points = neuron_data.points[:, :3]  # Utilizza solo le prime 3 coordinate
         attractor_points = {}
 

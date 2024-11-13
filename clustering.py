@@ -38,13 +38,13 @@ class ClusteringManager:
         distance_factor = 0.0
         
         if avg_cluster_size >= density_threshold:
-            num_neighbors = max(10, default_min_samples - int((avg_cluster_size - density_threshold) / density_threshold * 10))
+            num_neighbors = max(5, default_min_samples - int((avg_cluster_size - density_threshold) / density_threshold * 5))
             distance_factor = max(0.1, 0.9 - (avg_cluster_size - density_threshold) / density_threshold * 0.1)
         else:
-            num_neighbors = min(20, default_min_samples + int((density_threshold - avg_cluster_size) / density_threshold * 20))
+            num_neighbors = min(10, default_min_samples + int((density_threshold - avg_cluster_size) / density_threshold * 10))
             distance_factor = min(0.9, 0.1 + (density_threshold - avg_cluster_size) / density_threshold * 0.1)
         
-        num_neighbors = min(20, max(10, num_neighbors))
+        num_neighbors = min(10, max(5, num_neighbors))
         distance_factor = min(0.9, max(0.1, distance_factor))
         
         return num_neighbors, distance_factor

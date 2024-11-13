@@ -53,7 +53,14 @@ class StitchingManager:
                     tipo_struttura=tipo_struttura
                 )
                 threshold = min_distance + min_distance * distance_factor
-
+                # Usa adapt_weights per ottenere i pesi dinamici
+                w_dist, w_growth, w_dir, w_cur = self.adapt_weights_based_on_dbscan_density(
+                    points=neuron_data.points,
+                    labels=labels,
+                    unique_labels=unique_labels,
+                    counts=counts,
+                    tipo_struttura=tipo_struttura
+                )
                 best_candidate = None
                 best_score = float('inf')
 
@@ -73,10 +80,10 @@ class StitchingManager:
                             growth_angle=growth_angle,
                             direction_angle=direction_angle,
                             curvature_change=growth_angle,
-                            w_dist=self.weights["distance"],
-                            w_growth=self.weights["growth"],
-                            w_dir=self.weights["direction"],
-                            w_cur=self.weights["curvature"]
+                            w_dist=w_dist,
+                            w_growth=w_growth,
+                            w_dir=w_dir,
+                            w_cur=w_cur
                         )
 
                         if score < best_score:
@@ -121,11 +128,11 @@ class StitchingManager:
         density_threshold_estimate = self.clustering_manager.estimate_density_threshold(labels, counts, percentile=percentile)
         
         if avg_cluster_size > density_threshold_estimate:
-            w_dist, w_growth, w_dir, w_cur = 0.3, 0.3, 0.3, 0.2
+            w_dist, w_growth, w_dir, w_cur = 0.4, 0.2, 0.3, 0.1
         else:
-            w_dist, w_growth, w_dir, w_cur = 0.5, 0.15, 0.15, 0.2
+            w_dist, w_growth, w_dir, w_cur = 0.2, 0.3, 0.3, 0.2
             
-        print(f"[DEBUG] Pesi adattati: w_dist={w_dist}, w_growth={w_growth}, w_dir={w_dir}, w_cur={w_cur}")
+        #print(f"[DEBUG] Pesi adattati: w_dist={w_dist}, w_growth={w_growth}, w_dir={w_dir}, w_cur={w_cur}")
         return w_dist, w_growth, w_dir, w_cur
 
     def calculate_score_with_sigmoid(self, distance, growth_angle, direction_angle, curvature_change, w_dist, w_growth, w_dir, w_cur):

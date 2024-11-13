@@ -6,7 +6,7 @@ from storage import NeuronDataStorage  # Assicurati di avere la classe NeuronDat
 
 
 class VectorCalculator:
-    def calculate_growth_vector(self, points, smoothing_method='adaptive', sigma=1.0, window_size=10, **kwargs):
+    def calculate_growth_vector(self, points, smoothing_method='adaptive', sigma=1.0, window_size=5, **kwargs):
         if points.shape[0] < 2:  # PCA richiede almeno 2 punti con variazione
             #print("[DEBUG] Punti insufficienti per PCA.")
             return np.zeros(3)

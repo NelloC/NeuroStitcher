@@ -40,7 +40,7 @@ print("Esecuzione dello stitching...")
 # Calcolo dei best stitches
 stitcher = NeuronStitcher(file_path, unit_orientation_origin)
 best_stitches = stitcher.find_best_stitches(pieces=model.get_lines())
-
+print("Fine dello stitching...")
 # Organizza i candidati per visualizzazione
 candidates = {
     piece_id: stitch_list

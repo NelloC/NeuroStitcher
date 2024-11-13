@@ -338,7 +338,10 @@ class StitchVisualizer:
 
             message = self.translations[language]['reject_message']
             message_color = "red"
-            self.stitches.remove(current_candidate)
+            for stitch in self.stitches:
+                if np.array_equal(stitch, current_candidate):
+                    self.stitches.remove(stitch)
+                    break
 
         # Mostra il candidato attuale con possibili aggiornamenti
         candidate_key = self.candidate_keys[self.current_candidate_index]
@@ -451,7 +454,21 @@ class StitchVisualizer:
             self.manual_mode_active = not self.manual_mode_active
             message = (self.translations[language]['manual_message']
                     if self.manual_mode_active else self.translations[language]['manual_deactivate'])
-            return self.plot_full_neuron(language), html.P(message, style={"color": "blue"})
+
+            # Quando la modalità manuale è attiva, evidenzia l'ending corrente in blu
+            if self.manual_mode_active:
+                current_candidate = self.candidates[self.candidate_keys[self.current_candidate_index]][0]
+                ending_point = current_candidate['ending'][:3]
+
+                fig = self.plot_full_neuron(language)
+                fig.add_scatter3d(
+                    x=[ending_point[0]], y=[ending_point[1]], z=[ending_point[2]],
+                    mode='markers', marker=dict(size=10, color='blue', symbol='circle'),
+                    name=self.translations[language]['ending_point']
+                )
+                return fig, html.P(message, style={"color": "blue"})
+            else:
+                return self.plot_full_neuron(language), html.P(message, style={"color": "blue"})
 
         if trigger == 'neuron-plot' and self.manual_mode_active:
             if click_data:

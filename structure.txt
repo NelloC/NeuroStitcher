@@ -1,0 +1,3034 @@
+|   NeuroStitcher
+|   __pycache__
+|   assets
+|   daprecated
+|   data
+|   venv
+|   |   bin
+|   |   etc
+|   |   |   jupyter
+|   |   |   |   nbconfig
+|   |   |   |   |   notebook.d
+|   |   include
+|   |   lib
+|   |   |   python3.9
+|   |   |   |   site-packages
+|   |   |   |   |   AppKit
+|   |   |   |   |   ApplicationServices
+|   |   |   |   |   Cocoa
+|   |   |   |   |   CoreFoundation
+|   |   |   |   |   CoreText
+|   |   |   |   |   Foundation
+|   |   |   |   |   HIServices
+|   |   |   |   |   IPython
+|   |   |   |   |   |   core
+|   |   |   |   |   |   |   magics
+|   |   |   |   |   |   |   profile
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   daft_extension
+|   |   |   |   |   |   extensions
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   external
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   lib
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   sphinxext
+|   |   |   |   |   |   terminal
+|   |   |   |   |   |   |   pt_inputhooks
+|   |   |   |   |   |   |   shortcuts
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   testing
+|   |   |   |   |   |   |   plugin
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   utils
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   MarkupSafe-3.0.2.dist-info
+|   |   |   |   |   PIL
+|   |   |   |   |   PrintCore
+|   |   |   |   |   PyObjCTools
+|   |   |   |   |   PyQt5
+|   |   |   |   |   |   Qt5
+|   |   |   |   |   |   |   lib
+|   |   |   |   |   |   |   |   QtBluetooth.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtConcurrent.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtCore.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtDBus.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtDesigner.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtGui.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtHelp.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtLocation.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtMacExtras.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtMultimedia.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtMultimediaQuick.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtMultimediaWidgets.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtNetwork.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtNfc.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtOpenGL.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtPositioning.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtPositioningQuick.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtPrintSupport.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQml.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQmlModels.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQmlWorkerScript.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQuick.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQuick3D.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQuick3DAssetImport.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQuick3DRender.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQuick3DRuntimeRender.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQuick3DUtils.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQuickControls2.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQuickParticles.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQuickShapes.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQuickTemplates2.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQuickTest.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtQuickWidgets.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtRemoteObjects.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtSensors.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtSerialPort.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtSql.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtSvg.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtTest.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtTextToSpeech.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtWebChannel.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtWebSockets.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtWebView.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtWidgets.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtXml.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   |   QtXmlPatterns.framework
+|   |   |   |   |   |   |   |   |   Resources
+|   |   |   |   |   |   |   |   |   Versions
+|   |   |   |   |   |   |   |   |   |   5
+|   |   |   |   |   |   |   plugins
+|   |   |   |   |   |   |   |   assetimporters
+|   |   |   |   |   |   |   |   audio
+|   |   |   |   |   |   |   |   bearer
+|   |   |   |   |   |   |   |   generic
+|   |   |   |   |   |   |   |   geometryloaders
+|   |   |   |   |   |   |   |   geoservices
+|   |   |   |   |   |   |   |   iconengines
+|   |   |   |   |   |   |   |   imageformats
+|   |   |   |   |   |   |   |   mediaservice
+|   |   |   |   |   |   |   |   platforms
+|   |   |   |   |   |   |   |   platformthemes
+|   |   |   |   |   |   |   |   playlistformats
+|   |   |   |   |   |   |   |   position
+|   |   |   |   |   |   |   |   printsupport
+|   |   |   |   |   |   |   |   renderers
+|   |   |   |   |   |   |   |   renderplugins
+|   |   |   |   |   |   |   |   sceneparsers
+|   |   |   |   |   |   |   |   sensorgestures
+|   |   |   |   |   |   |   |   sensors
+|   |   |   |   |   |   |   |   sqldrivers
+|   |   |   |   |   |   |   |   styles
+|   |   |   |   |   |   |   |   texttospeech
+|   |   |   |   |   |   |   |   webview
+|   |   |   |   |   |   |   qml
+|   |   |   |   |   |   |   |   Qt
+|   |   |   |   |   |   |   |   |   WebSockets
+|   |   |   |   |   |   |   |   |   labs
+|   |   |   |   |   |   |   |   |   |   animation
+|   |   |   |   |   |   |   |   |   |   calendar
+|   |   |   |   |   |   |   |   |   |   folderlistmodel
+|   |   |   |   |   |   |   |   |   |   lottieqt
+|   |   |   |   |   |   |   |   |   |   platform
+|   |   |   |   |   |   |   |   |   |   qmlmodels
+|   |   |   |   |   |   |   |   |   |   settings
+|   |   |   |   |   |   |   |   |   |   sharedimage
+|   |   |   |   |   |   |   |   |   |   wavefrontmesh
+|   |   |   |   |   |   |   |   |   test
+|   |   |   |   |   |   |   |   |   |   qtestroot
+|   |   |   |   |   |   |   |   QtAudioEngine
+|   |   |   |   |   |   |   |   QtBluetooth
+|   |   |   |   |   |   |   |   QtGraphicalEffects
+|   |   |   |   |   |   |   |   |   private
+|   |   |   |   |   |   |   |   QtLocation
+|   |   |   |   |   |   |   |   QtMultimedia
+|   |   |   |   |   |   |   |   QtNfc
+|   |   |   |   |   |   |   |   QtPositioning
+|   |   |   |   |   |   |   |   QtQml
+|   |   |   |   |   |   |   |   |   Models.2
+|   |   |   |   |   |   |   |   |   RemoteObjects
+|   |   |   |   |   |   |   |   |   StateMachine
+|   |   |   |   |   |   |   |   |   WorkerScript.2
+|   |   |   |   |   |   |   |   QtQuick
+|   |   |   |   |   |   |   |   |   Controls
+|   |   |   |   |   |   |   |   |   |   Private
+|   |   |   |   |   |   |   |   |   |   Styles
+|   |   |   |   |   |   |   |   |   |   |   Base
+|   |   |   |   |   |   |   |   |   |   |   |   images
+|   |   |   |   |   |   |   |   |   |   |   Desktop
+|   |   |   |   |   |   |   |   |   |   |   Flat
+|   |   |   |   |   |   |   |   |   Controls.2
+|   |   |   |   |   |   |   |   |   |   Fusion
+|   |   |   |   |   |   |   |   |   |   Imagine
+|   |   |   |   |   |   |   |   |   |   Material
+|   |   |   |   |   |   |   |   |   |   Universal
+|   |   |   |   |   |   |   |   |   |   designer
+|   |   |   |   |   |   |   |   |   |   |   images
+|   |   |   |   |   |   |   |   |   Dialogs
+|   |   |   |   |   |   |   |   |   |   Private
+|   |   |   |   |   |   |   |   |   |   images
+|   |   |   |   |   |   |   |   |   |   qml
+|   |   |   |   |   |   |   |   |   Extras
+|   |   |   |   |   |   |   |   |   |   Private
+|   |   |   |   |   |   |   |   |   |   designer
+|   |   |   |   |   |   |   |   |   |   |   images
+|   |   |   |   |   |   |   |   |   Layouts
+|   |   |   |   |   |   |   |   |   LocalStorage
+|   |   |   |   |   |   |   |   |   Particles.2
+|   |   |   |   |   |   |   |   |   Pdf
+|   |   |   |   |   |   |   |   |   |   qml
+|   |   |   |   |   |   |   |   |   PrivateWidgets
+|   |   |   |   |   |   |   |   |   Scene2D
+|   |   |   |   |   |   |   |   |   Scene3D
+|   |   |   |   |   |   |   |   |   Shapes
+|   |   |   |   |   |   |   |   |   Templates.2
+|   |   |   |   |   |   |   |   |   Timeline
+|   |   |   |   |   |   |   |   |   Window.2
+|   |   |   |   |   |   |   |   |   XmlListModel
+|   |   |   |   |   |   |   |   QtQuick.2
+|   |   |   |   |   |   |   |   QtQuick3D
+|   |   |   |   |   |   |   |   |   Effects
+|   |   |   |   |   |   |   |   |   |   designer
+|   |   |   |   |   |   |   |   |   |   |   images
+|   |   |   |   |   |   |   |   |   |   |   source
+|   |   |   |   |   |   |   |   |   |   maps
+|   |   |   |   |   |   |   |   |   Helpers
+|   |   |   |   |   |   |   |   |   |   meshes
+|   |   |   |   |   |   |   |   |   Materials
+|   |   |   |   |   |   |   |   |   |   designer
+|   |   |   |   |   |   |   |   |   |   |   images
+|   |   |   |   |   |   |   |   |   |   |   source
+|   |   |   |   |   |   |   |   |   |   maps
+|   |   |   |   |   |   |   |   |   designer
+|   |   |   |   |   |   |   |   |   |   images
+|   |   |   |   |   |   |   |   |   |   source
+|   |   |   |   |   |   |   |   QtRemoteObjects
+|   |   |   |   |   |   |   |   QtSensors
+|   |   |   |   |   |   |   |   QtTest
+|   |   |   |   |   |   |   |   QtWebChannel
+|   |   |   |   |   |   |   |   QtWebSockets
+|   |   |   |   |   |   |   |   QtWebView
+|   |   |   |   |   |   |   qsci
+|   |   |   |   |   |   |   |   api
+|   |   |   |   |   |   |   |   |   python
+|   |   |   |   |   |   |   translations
+|   |   |   |   |   |   bindings
+|   |   |   |   |   |   |   QtBluetooth
+|   |   |   |   |   |   |   QtCore
+|   |   |   |   |   |   |   QtDBus
+|   |   |   |   |   |   |   QtDesigner
+|   |   |   |   |   |   |   QtGui
+|   |   |   |   |   |   |   QtHelp
+|   |   |   |   |   |   |   QtLocation
+|   |   |   |   |   |   |   QtMacExtras
+|   |   |   |   |   |   |   QtMultimedia
+|   |   |   |   |   |   |   QtMultimediaWidgets
+|   |   |   |   |   |   |   QtNetwork
+|   |   |   |   |   |   |   QtNfc
+|   |   |   |   |   |   |   QtOpenGL
+|   |   |   |   |   |   |   QtPositioning
+|   |   |   |   |   |   |   QtPrintSupport
+|   |   |   |   |   |   |   QtQml
+|   |   |   |   |   |   |   QtQuick
+|   |   |   |   |   |   |   QtQuick3D
+|   |   |   |   |   |   |   QtQuickWidgets
+|   |   |   |   |   |   |   QtRemoteObjects
+|   |   |   |   |   |   |   QtSensors
+|   |   |   |   |   |   |   QtSerialPort
+|   |   |   |   |   |   |   QtSql
+|   |   |   |   |   |   |   QtSvg
+|   |   |   |   |   |   |   QtTest
+|   |   |   |   |   |   |   QtTextToSpeech
+|   |   |   |   |   |   |   QtWebChannel
+|   |   |   |   |   |   |   QtWebSockets
+|   |   |   |   |   |   |   QtWidgets
+|   |   |   |   |   |   |   QtXml
+|   |   |   |   |   |   |   QtXmlPatterns
+|   |   |   |   |   |   uic
+|   |   |   |   |   |   |   Compiler
+|   |   |   |   |   |   |   Loader
+|   |   |   |   |   |   |   port_v2
+|   |   |   |   |   |   |   port_v3
+|   |   |   |   |   |   |   widget-plugins
+|   |   |   |   |   PyQt5-5.15.11.dist-info
+|   |   |   |   |   PyQt5_Qt5-5.15.15.dist-info
+|   |   |   |   |   PyQt5_sip-12.15.0.dist-info
+|   |   |   |   |   PyVirtualDisplay-3.0.dist-info
+|   |   |   |   |   QtPy-2.4.2.dist-info
+|   |   |   |   |   Quartz
+|   |   |   |   |   |   CoreGraphics
+|   |   |   |   |   |   CoreVideo
+|   |   |   |   |   |   ImageIO
+|   |   |   |   |   |   ImageKit
+|   |   |   |   |   |   PDFKit
+|   |   |   |   |   |   QuartzComposer
+|   |   |   |   |   |   QuartzCore
+|   |   |   |   |   |   QuartzFilters
+|   |   |   |   |   |   QuickLookUI
+|   |   |   |   |   _distutils_hack
+|   |   |   |   |   _plotly_future_
+|   |   |   |   |   _plotly_utils
+|   |   |   |   |   |   colors
+|   |   |   |   |   asttokens
+|   |   |   |   |   asttokens-2.4.1.dist-info
+|   |   |   |   |   blinker
+|   |   |   |   |   blinker-1.8.2.dist-info
+|   |   |   |   |   certifi
+|   |   |   |   |   certifi-2024.8.30.dist-info
+|   |   |   |   |   charset_normalizer
+|   |   |   |   |   |   cli
+|   |   |   |   |   charset_normalizer-3.4.0.dist-info
+|   |   |   |   |   click
+|   |   |   |   |   click-8.1.7.dist-info
+|   |   |   |   |   contourpy
+|   |   |   |   |   |   util
+|   |   |   |   |   contourpy-1.3.0.dist-info
+|   |   |   |   |   cycler
+|   |   |   |   |   cycler-0.12.1.dist-info
+|   |   |   |   |   dash
+|   |   |   |   |   |   dash-renderer
+|   |   |   |   |   |   |   build
+|   |   |   |   |   |   dash_table
+|   |   |   |   |   |   dcc
+|   |   |   |   |   |   deps
+|   |   |   |   |   |   development
+|   |   |   |   |   |   html
+|   |   |   |   |   |   labextension
+|   |   |   |   |   |   |   dist
+|   |   |   |   |   |   long_callback
+|   |   |   |   |   |   |   managers
+|   |   |   |   |   |   nbextension
+|   |   |   |   |   |   testing
+|   |   |   |   |   dash-2.18.2.dist-info
+|   |   |   |   |   dash_core_components
+|   |   |   |   |   dash_core_components-2.0.0.dist-info
+|   |   |   |   |   dash_html_components
+|   |   |   |   |   dash_html_components-2.0.0.dist-info
+|   |   |   |   |   dash_table
+|   |   |   |   |   dash_table-5.0.0.dist-info
+|   |   |   |   |   dateutil
+|   |   |   |   |   |   parser
+|   |   |   |   |   |   tz
+|   |   |   |   |   |   zoneinfo
+|   |   |   |   |   decorator-5.1.1.dist-info
+|   |   |   |   |   exceptiongroup
+|   |   |   |   |   exceptiongroup-1.2.2.dist-info
+|   |   |   |   |   executing
+|   |   |   |   |   executing-2.1.0.dist-info
+|   |   |   |   |   flask
+|   |   |   |   |   |   json
+|   |   |   |   |   |   sansio
+|   |   |   |   |   flask-3.0.3.dist-info
+|   |   |   |   |   fontTools
+|   |   |   |   |   |   cffLib
+|   |   |   |   |   |   colorLib
+|   |   |   |   |   |   config
+|   |   |   |   |   |   cu2qu
+|   |   |   |   |   |   designspaceLib
+|   |   |   |   |   |   encodings
+|   |   |   |   |   |   feaLib
+|   |   |   |   |   |   merge
+|   |   |   |   |   |   misc
+|   |   |   |   |   |   |   plistlib
+|   |   |   |   |   |   mtiLib
+|   |   |   |   |   |   otlLib
+|   |   |   |   |   |   |   optimize
+|   |   |   |   |   |   pens
+|   |   |   |   |   |   qu2cu
+|   |   |   |   |   |   subset
+|   |   |   |   |   |   svgLib
+|   |   |   |   |   |   |   path
+|   |   |   |   |   |   t1Lib
+|   |   |   |   |   |   ttLib
+|   |   |   |   |   |   |   tables
+|   |   |   |   |   |   ufoLib
+|   |   |   |   |   |   unicodedata
+|   |   |   |   |   |   varLib
+|   |   |   |   |   |   |   instancer
+|   |   |   |   |   |   voltLib
+|   |   |   |   |   fonttools-4.54.1.dist-info
+|   |   |   |   |   idna
+|   |   |   |   |   idna-3.10.dist-info
+|   |   |   |   |   importlib_metadata
+|   |   |   |   |   |   compat
+|   |   |   |   |   importlib_metadata-8.5.0.dist-info
+|   |   |   |   |   importlib_resources
+|   |   |   |   |   |   compat
+|   |   |   |   |   |   future
+|   |   |   |   |   |   tests
+|   |   |   |   |   |   |   compat
+|   |   |   |   |   importlib_resources-6.4.5.dist-info
+|   |   |   |   |   ipython-8.18.1.dist-info
+|   |   |   |   |   itsdangerous
+|   |   |   |   |   itsdangerous-2.2.0.dist-info
+|   |   |   |   |   jedi
+|   |   |   |   |   |   api
+|   |   |   |   |   |   |   refactoring
+|   |   |   |   |   |   inference
+|   |   |   |   |   |   |   compiled
+|   |   |   |   |   |   |   |   subprocess
+|   |   |   |   |   |   |   gradual
+|   |   |   |   |   |   |   value
+|   |   |   |   |   |   plugins
+|   |   |   |   |   |   third_party
+|   |   |   |   |   |   |   django-stubs
+|   |   |   |   |   |   |   |   django-stubs
+|   |   |   |   |   |   |   |   |   apps
+|   |   |   |   |   |   |   |   |   conf
+|   |   |   |   |   |   |   |   |   |   locale
+|   |   |   |   |   |   |   |   |   |   urls
+|   |   |   |   |   |   |   |   |   contrib
+|   |   |   |   |   |   |   |   |   |   admin
+|   |   |   |   |   |   |   |   |   |   |   templatetags
+|   |   |   |   |   |   |   |   |   |   |   views
+|   |   |   |   |   |   |   |   |   |   admindocs
+|   |   |   |   |   |   |   |   |   |   auth
+|   |   |   |   |   |   |   |   |   |   |   handlers
+|   |   |   |   |   |   |   |   |   |   |   management
+|   |   |   |   |   |   |   |   |   |   |   |   commands
+|   |   |   |   |   |   |   |   |   |   contenttypes
+|   |   |   |   |   |   |   |   |   |   |   management
+|   |   |   |   |   |   |   |   |   |   |   |   commands
+|   |   |   |   |   |   |   |   |   |   flatpages
+|   |   |   |   |   |   |   |   |   |   |   templatetags
+|   |   |   |   |   |   |   |   |   |   gis
+|   |   |   |   |   |   |   |   |   |   |   db
+|   |   |   |   |   |   |   |   |   |   |   |   models
+|   |   |   |   |   |   |   |   |   |   humanize
+|   |   |   |   |   |   |   |   |   |   |   templatetags
+|   |   |   |   |   |   |   |   |   |   messages
+|   |   |   |   |   |   |   |   |   |   |   storage
+|   |   |   |   |   |   |   |   |   |   postgres
+|   |   |   |   |   |   |   |   |   |   |   aggregates
+|   |   |   |   |   |   |   |   |   |   |   fields
+|   |   |   |   |   |   |   |   |   |   redirects
+|   |   |   |   |   |   |   |   |   |   sessions
+|   |   |   |   |   |   |   |   |   |   |   backends
+|   |   |   |   |   |   |   |   |   |   |   management
+|   |   |   |   |   |   |   |   |   |   |   |   commands
+|   |   |   |   |   |   |   |   |   |   sitemaps
+|   |   |   |   |   |   |   |   |   |   |   management
+|   |   |   |   |   |   |   |   |   |   |   |   commands
+|   |   |   |   |   |   |   |   |   |   sites
+|   |   |   |   |   |   |   |   |   |   staticfiles
+|   |   |   |   |   |   |   |   |   |   |   management
+|   |   |   |   |   |   |   |   |   |   |   |   commands
+|   |   |   |   |   |   |   |   |   |   |   templatetags
+|   |   |   |   |   |   |   |   |   |   syndication
+|   |   |   |   |   |   |   |   |   core
+|   |   |   |   |   |   |   |   |   |   cache
+|   |   |   |   |   |   |   |   |   |   |   backends
+|   |   |   |   |   |   |   |   |   |   checks
+|   |   |   |   |   |   |   |   |   |   |   security
+|   |   |   |   |   |   |   |   |   |   files
+|   |   |   |   |   |   |   |   |   |   handlers
+|   |   |   |   |   |   |   |   |   |   mail
+|   |   |   |   |   |   |   |   |   |   |   backends
+|   |   |   |   |   |   |   |   |   |   management
+|   |   |   |   |   |   |   |   |   |   |   commands
+|   |   |   |   |   |   |   |   |   |   serializers
+|   |   |   |   |   |   |   |   |   |   servers
+|   |   |   |   |   |   |   |   |   db
+|   |   |   |   |   |   |   |   |   |   backends
+|   |   |   |   |   |   |   |   |   |   |   base
+|   |   |   |   |   |   |   |   |   |   |   dummy
+|   |   |   |   |   |   |   |   |   |   |   mysql
+|   |   |   |   |   |   |   |   |   |   |   postgresql
+|   |   |   |   |   |   |   |   |   |   |   sqlite3
+|   |   |   |   |   |   |   |   |   |   migrations
+|   |   |   |   |   |   |   |   |   |   |   operations
+|   |   |   |   |   |   |   |   |   |   models
+|   |   |   |   |   |   |   |   |   |   |   fields
+|   |   |   |   |   |   |   |   |   |   |   functions
+|   |   |   |   |   |   |   |   |   |   |   sql
+|   |   |   |   |   |   |   |   |   dispatch
+|   |   |   |   |   |   |   |   |   forms
+|   |   |   |   |   |   |   |   |   http
+|   |   |   |   |   |   |   |   |   middleware
+|   |   |   |   |   |   |   |   |   template
+|   |   |   |   |   |   |   |   |   |   backends
+|   |   |   |   |   |   |   |   |   |   loaders
+|   |   |   |   |   |   |   |   |   templatetags
+|   |   |   |   |   |   |   |   |   test
+|   |   |   |   |   |   |   |   |   urls
+|   |   |   |   |   |   |   |   |   utils
+|   |   |   |   |   |   |   |   |   |   translation
+|   |   |   |   |   |   |   |   |   views
+|   |   |   |   |   |   |   |   |   |   decorators
+|   |   |   |   |   |   |   |   |   |   generic
+|   |   |   |   |   |   |   typeshed
+|   |   |   |   |   |   |   |   stdlib
+|   |   |   |   |   |   |   |   |   2
+|   |   |   |   |   |   |   |   |   |   distutils
+|   |   |   |   |   |   |   |   |   |   |   command
+|   |   |   |   |   |   |   |   |   |   email
+|   |   |   |   |   |   |   |   |   |   |   mime
+|   |   |   |   |   |   |   |   |   |   encodings
+|   |   |   |   |   |   |   |   |   |   multiprocessing
+|   |   |   |   |   |   |   |   |   |   |   dummy
+|   |   |   |   |   |   |   |   |   |   os
+|   |   |   |   |   |   |   |   |   2and3
+|   |   |   |   |   |   |   |   |   |   _typeshed
+|   |   |   |   |   |   |   |   |   |   ctypes
+|   |   |   |   |   |   |   |   |   |   curses
+|   |   |   |   |   |   |   |   |   |   ensurepip
+|   |   |   |   |   |   |   |   |   |   lib2to3
+|   |   |   |   |   |   |   |   |   |   |   pgen2
+|   |   |   |   |   |   |   |   |   |   logging
+|   |   |   |   |   |   |   |   |   |   msilib
+|   |   |   |   |   |   |   |   |   |   pydoc_data
+|   |   |   |   |   |   |   |   |   |   pyexpat
+|   |   |   |   |   |   |   |   |   |   sqlite3
+|   |   |   |   |   |   |   |   |   |   wsgiref
+|   |   |   |   |   |   |   |   |   |   xml
+|   |   |   |   |   |   |   |   |   |   |   dom
+|   |   |   |   |   |   |   |   |   |   |   etree
+|   |   |   |   |   |   |   |   |   |   |   parsers
+|   |   |   |   |   |   |   |   |   |   |   |   expat
+|   |   |   |   |   |   |   |   |   |   |   sax
+|   |   |   |   |   |   |   |   |   3
+|   |   |   |   |   |   |   |   |   |   asyncio
+|   |   |   |   |   |   |   |   |   |   collections
+|   |   |   |   |   |   |   |   |   |   concurrent
+|   |   |   |   |   |   |   |   |   |   |   futures
+|   |   |   |   |   |   |   |   |   |   dbm
+|   |   |   |   |   |   |   |   |   |   distutils
+|   |   |   |   |   |   |   |   |   |   |   command
+|   |   |   |   |   |   |   |   |   |   email
+|   |   |   |   |   |   |   |   |   |   |   mime
+|   |   |   |   |   |   |   |   |   |   encodings
+|   |   |   |   |   |   |   |   |   |   html
+|   |   |   |   |   |   |   |   |   |   http
+|   |   |   |   |   |   |   |   |   |   importlib
+|   |   |   |   |   |   |   |   |   |   json
+|   |   |   |   |   |   |   |   |   |   multiprocessing
+|   |   |   |   |   |   |   |   |   |   |   dummy
+|   |   |   |   |   |   |   |   |   |   os
+|   |   |   |   |   |   |   |   |   |   tkinter
+|   |   |   |   |   |   |   |   |   |   unittest
+|   |   |   |   |   |   |   |   |   |   urllib
+|   |   |   |   |   |   |   |   |   |   venv
+|   |   |   |   |   |   |   |   |   |   xmlrpc
+|   |   |   |   |   |   |   |   |   3.7
+|   |   |   |   |   |   |   |   |   3.9
+|   |   |   |   |   |   |   |   |   |   zoneinfo
+|   |   |   |   |   |   |   |   third_party
+|   |   |   |   |   |   |   |   |   2
+|   |   |   |   |   |   |   |   |   |   OpenSSL
+|   |   |   |   |   |   |   |   |   |   concurrent
+|   |   |   |   |   |   |   |   |   |   |   futures
+|   |   |   |   |   |   |   |   |   |   fb303
+|   |   |   |   |   |   |   |   |   |   kazoo
+|   |   |   |   |   |   |   |   |   |   |   recipe
+|   |   |   |   |   |   |   |   |   |   routes
+|   |   |   |   |   |   |   |   |   |   scribe
+|   |   |   |   |   |   |   |   |   |   six
+|   |   |   |   |   |   |   |   |   |   |   moves
+|   |   |   |   |   |   |   |   |   |   |   |   urllib
+|   |   |   |   |   |   |   |   |   |   tornado
+|   |   |   |   |   |   |   |   |   2and3
+|   |   |   |   |   |   |   |   |   |   atomicwrites
+|   |   |   |   |   |   |   |   |   |   attr
+|   |   |   |   |   |   |   |   |   |   backports
+|   |   |   |   |   |   |   |   |   |   bleach
+|   |   |   |   |   |   |   |   |   |   boto
+|   |   |   |   |   |   |   |   |   |   |   ec2
+|   |   |   |   |   |   |   |   |   |   |   elb
+|   |   |   |   |   |   |   |   |   |   |   kms
+|   |   |   |   |   |   |   |   |   |   |   s3
+|   |   |   |   |   |   |   |   |   |   cachetools
+|   |   |   |   |   |   |   |   |   |   characteristic
+|   |   |   |   |   |   |   |   |   |   chardet
+|   |   |   |   |   |   |   |   |   |   click
+|   |   |   |   |   |   |   |   |   |   cryptography
+|   |   |   |   |   |   |   |   |   |   |   hazmat
+|   |   |   |   |   |   |   |   |   |   |   |   backends
+|   |   |   |   |   |   |   |   |   |   |   |   bindings
+|   |   |   |   |   |   |   |   |   |   |   |   |   openssl
+|   |   |   |   |   |   |   |   |   |   |   |   primitives
+|   |   |   |   |   |   |   |   |   |   |   |   |   asymmetric
+|   |   |   |   |   |   |   |   |   |   |   |   |   ciphers
+|   |   |   |   |   |   |   |   |   |   |   |   |   kdf
+|   |   |   |   |   |   |   |   |   |   |   |   |   serialization
+|   |   |   |   |   |   |   |   |   |   |   |   |   twofactor
+|   |   |   |   |   |   |   |   |   |   |   x509
+|   |   |   |   |   |   |   |   |   |   datetimerange
+|   |   |   |   |   |   |   |   |   |   dateutil
+|   |   |   |   |   |   |   |   |   |   |   tz
+|   |   |   |   |   |   |   |   |   |   deprecated
+|   |   |   |   |   |   |   |   |   |   emoji
+|   |   |   |   |   |   |   |   |   |   flask
+|   |   |   |   |   |   |   |   |   |   |   json
+|   |   |   |   |   |   |   |   |   |   geoip2
+|   |   |   |   |   |   |   |   |   |   google
+|   |   |   |   |   |   |   |   |   |   |   protobuf
+|   |   |   |   |   |   |   |   |   |   |   |   compiler
+|   |   |   |   |   |   |   |   |   |   |   |   internal
+|   |   |   |   |   |   |   |   |   |   |   |   util
+|   |   |   |   |   |   |   |   |   |   jinja2
+|   |   |   |   |   |   |   |   |   |   markdown
+|   |   |   |   |   |   |   |   |   |   |   extensions
+|   |   |   |   |   |   |   |   |   |   markupsafe
+|   |   |   |   |   |   |   |   |   |   maxminddb
+|   |   |   |   |   |   |   |   |   |   nmap
+|   |   |   |   |   |   |   |   |   |   paramiko
+|   |   |   |   |   |   |   |   |   |   pyVmomi
+|   |   |   |   |   |   |   |   |   |   |   vim
+|   |   |   |   |   |   |   |   |   |   |   vmodl
+|   |   |   |   |   |   |   |   |   |   pymysql
+|   |   |   |   |   |   |   |   |   |   |   constants
+|   |   |   |   |   |   |   |   |   |   pynamodb
+|   |   |   |   |   |   |   |   |   |   |   connection
+|   |   |   |   |   |   |   |   |   |   pytz
+|   |   |   |   |   |   |   |   |   |   redis
+|   |   |   |   |   |   |   |   |   |   requests
+|   |   |   |   |   |   |   |   |   |   |   packages
+|   |   |   |   |   |   |   |   |   |   |   |   urllib3
+|   |   |   |   |   |   |   |   |   |   |   |   |   contrib
+|   |   |   |   |   |   |   |   |   |   |   |   |   packages
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   ssl_match_hostname
+|   |   |   |   |   |   |   |   |   |   |   |   |   util
+|   |   |   |   |   |   |   |   |   |   retry
+|   |   |   |   |   |   |   |   |   |   simplejson
+|   |   |   |   |   |   |   |   |   |   slugify
+|   |   |   |   |   |   |   |   |   |   tzlocal
+|   |   |   |   |   |   |   |   |   |   werkzeug
+|   |   |   |   |   |   |   |   |   |   |   contrib
+|   |   |   |   |   |   |   |   |   |   |   debug
+|   |   |   |   |   |   |   |   |   |   |   middleware
+|   |   |   |   |   |   |   |   |   |   yaml
+|   |   |   |   |   |   |   |   |   3
+|   |   |   |   |   |   |   |   |   |   aiofiles
+|   |   |   |   |   |   |   |   |   |   |   threadpool
+|   |   |   |   |   |   |   |   |   |   docutils
+|   |   |   |   |   |   |   |   |   |   |   parsers
+|   |   |   |   |   |   |   |   |   |   |   |   rst
+|   |   |   |   |   |   |   |   |   |   filelock
+|   |   |   |   |   |   |   |   |   |   freezegun
+|   |   |   |   |   |   |   |   |   |   jwt
+|   |   |   |   |   |   |   |   |   |   |   contrib
+|   |   |   |   |   |   |   |   |   |   |   |   algorithms
+|   |   |   |   |   |   |   |   |   |   pkg_resources
+|   |   |   |   |   |   |   |   |   |   pyrfc3339
+|   |   |   |   |   |   |   |   |   |   six
+|   |   |   |   |   |   |   |   |   |   |   moves
+|   |   |   |   |   |   |   |   |   |   |   |   urllib
+|   |   |   |   |   |   |   |   |   |   typed_ast
+|   |   |   |   |   |   |   |   |   |   waitress
+|   |   |   |   |   jedi-0.19.1.dist-info
+|   |   |   |   |   jinja2
+|   |   |   |   |   jinja2-3.1.4.dist-info
+|   |   |   |   |   joblib
+|   |   |   |   |   |   externals
+|   |   |   |   |   |   |   cloudpickle
+|   |   |   |   |   |   |   loky
+|   |   |   |   |   |   |   |   backend
+|   |   |   |   |   |   test
+|   |   |   |   |   |   |   data
+|   |   |   |   |   joblib-1.4.2.dist-info
+|   |   |   |   |   jupyterlab_plotly
+|   |   |   |   |   |   labextension
+|   |   |   |   |   |   |   static
+|   |   |   |   |   |   nbextension
+|   |   |   |   |   kiwisolver
+|   |   |   |   |   kiwisolver-1.4.7.dist-info
+|   |   |   |   |   markupsafe
+|   |   |   |   |   matplotlib
+|   |   |   |   |   |   _api
+|   |   |   |   |   |   axes
+|   |   |   |   |   |   backends
+|   |   |   |   |   |   |   qt_editor
+|   |   |   |   |   |   |   web_backend
+|   |   |   |   |   |   |   |   css
+|   |   |   |   |   |   |   |   js
+|   |   |   |   |   |   mpl-data
+|   |   |   |   |   |   |   fonts
+|   |   |   |   |   |   |   |   afm
+|   |   |   |   |   |   |   |   pdfcorefonts
+|   |   |   |   |   |   |   |   ttf
+|   |   |   |   |   |   |   images
+|   |   |   |   |   |   |   plot_directive
+|   |   |   |   |   |   |   sample_data
+|   |   |   |   |   |   |   |   axes_grid
+|   |   |   |   |   |   |   stylelib
+|   |   |   |   |   |   projections
+|   |   |   |   |   |   sphinxext
+|   |   |   |   |   |   style
+|   |   |   |   |   |   testing
+|   |   |   |   |   |   |   jpl_units
+|   |   |   |   |   |   tests
+|   |   |   |   |   |   tri
+|   |   |   |   |   matplotlib-3.9.2.dist-info
+|   |   |   |   |   matplotlib_inline
+|   |   |   |   |   matplotlib_inline-0.1.7.dist-info
+|   |   |   |   |   mpl_toolkits
+|   |   |   |   |   |   axes_grid1
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   axisartist
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   mplot3d
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   nest_asyncio-1.6.0.dist-info
+|   |   |   |   |   numpy
+|   |   |   |   |   |   _core
+|   |   |   |   |   |   |   include
+|   |   |   |   |   |   |   |   numpy
+|   |   |   |   |   |   |   |   |   random
+|   |   |   |   |   |   |   lib
+|   |   |   |   |   |   |   |   npy-pkg-config
+|   |   |   |   |   |   |   |   pkgconfig
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   |   examples
+|   |   |   |   |   |   |   |   |   cython
+|   |   |   |   |   |   |   |   |   limited_api
+|   |   |   |   |   |   _pyinstaller
+|   |   |   |   |   |   _typing
+|   |   |   |   |   |   _utils
+|   |   |   |   |   |   char
+|   |   |   |   |   |   compat
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   core
+|   |   |   |   |   |   distutils
+|   |   |   |   |   |   |   __pycache__
+|   |   |   |   |   |   |   checks
+|   |   |   |   |   |   |   command
+|   |   |   |   |   |   |   fcompiler
+|   |   |   |   |   |   |   mingw
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   doc
+|   |   |   |   |   |   f2py
+|   |   |   |   |   |   |   _backends
+|   |   |   |   |   |   |   src
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   src
+|   |   |   |   |   |   |   |   |   abstract_interface
+|   |   |   |   |   |   |   |   |   array_from_pyobj
+|   |   |   |   |   |   |   |   |   assumed_shape
+|   |   |   |   |   |   |   |   |   block_docstring
+|   |   |   |   |   |   |   |   |   callback
+|   |   |   |   |   |   |   |   |   cli
+|   |   |   |   |   |   |   |   |   common
+|   |   |   |   |   |   |   |   |   crackfortran
+|   |   |   |   |   |   |   |   |   f2cmap
+|   |   |   |   |   |   |   |   |   isocintrin
+|   |   |   |   |   |   |   |   |   kind
+|   |   |   |   |   |   |   |   |   mixed
+|   |   |   |   |   |   |   |   |   modules
+|   |   |   |   |   |   |   |   |   |   gh25337
+|   |   |   |   |   |   |   |   |   negative_bounds
+|   |   |   |   |   |   |   |   |   parameter
+|   |   |   |   |   |   |   |   |   quoted_character
+|   |   |   |   |   |   |   |   |   regression
+|   |   |   |   |   |   |   |   |   return_character
+|   |   |   |   |   |   |   |   |   return_complex
+|   |   |   |   |   |   |   |   |   return_integer
+|   |   |   |   |   |   |   |   |   return_logical
+|   |   |   |   |   |   |   |   |   return_real
+|   |   |   |   |   |   |   |   |   size
+|   |   |   |   |   |   |   |   |   string
+|   |   |   |   |   |   |   |   |   value_attrspec
+|   |   |   |   |   |   fft
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   lib
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   linalg
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   ma
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   matrixlib
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   polynomial
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   random
+|   |   |   |   |   |   |   _examples
+|   |   |   |   |   |   |   |   cffi
+|   |   |   |   |   |   |   |   cython
+|   |   |   |   |   |   |   |   numba
+|   |   |   |   |   |   |   lib
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   rec
+|   |   |   |   |   |   strings
+|   |   |   |   |   |   testing
+|   |   |   |   |   |   |   _private
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   tests
+|   |   |   |   |   |   typing
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   |   |   fail
+|   |   |   |   |   |   |   |   |   misc
+|   |   |   |   |   |   |   |   |   pass
+|   |   |   |   |   |   |   |   |   reveal
+|   |   |   |   |   numpy-2.0.2.dist-info
+|   |   |   |   |   objc
+|   |   |   |   |   packaging
+|   |   |   |   |   packaging-24.1.dist-info
+|   |   |   |   |   pandas
+|   |   |   |   |   |   _config
+|   |   |   |   |   |   _libs
+|   |   |   |   |   |   |   tslibs
+|   |   |   |   |   |   |   window
+|   |   |   |   |   |   _testing
+|   |   |   |   |   |   api
+|   |   |   |   |   |   |   extensions
+|   |   |   |   |   |   |   indexers
+|   |   |   |   |   |   |   interchange
+|   |   |   |   |   |   |   types
+|   |   |   |   |   |   |   typing
+|   |   |   |   |   |   arrays
+|   |   |   |   |   |   compat
+|   |   |   |   |   |   |   numpy
+|   |   |   |   |   |   core
+|   |   |   |   |   |   |   _numba
+|   |   |   |   |   |   |   |   kernels
+|   |   |   |   |   |   |   array_algos
+|   |   |   |   |   |   |   arrays
+|   |   |   |   |   |   |   |   arrow
+|   |   |   |   |   |   |   |   sparse
+|   |   |   |   |   |   |   computation
+|   |   |   |   |   |   |   dtypes
+|   |   |   |   |   |   |   groupby
+|   |   |   |   |   |   |   indexers
+|   |   |   |   |   |   |   indexes
+|   |   |   |   |   |   |   interchange
+|   |   |   |   |   |   |   internals
+|   |   |   |   |   |   |   methods
+|   |   |   |   |   |   |   ops
+|   |   |   |   |   |   |   reshape
+|   |   |   |   |   |   |   sparse
+|   |   |   |   |   |   |   strings
+|   |   |   |   |   |   |   tools
+|   |   |   |   |   |   |   util
+|   |   |   |   |   |   |   window
+|   |   |   |   |   |   errors
+|   |   |   |   |   |   io
+|   |   |   |   |   |   |   clipboard
+|   |   |   |   |   |   |   excel
+|   |   |   |   |   |   |   formats
+|   |   |   |   |   |   |   |   templates
+|   |   |   |   |   |   |   json
+|   |   |   |   |   |   |   parsers
+|   |   |   |   |   |   |   sas
+|   |   |   |   |   |   plotting
+|   |   |   |   |   |   |   _matplotlib
+|   |   |   |   |   |   tests
+|   |   |   |   |   |   |   api
+|   |   |   |   |   |   |   apply
+|   |   |   |   |   |   |   arithmetic
+|   |   |   |   |   |   |   arrays
+|   |   |   |   |   |   |   |   boolean
+|   |   |   |   |   |   |   |   categorical
+|   |   |   |   |   |   |   |   datetimes
+|   |   |   |   |   |   |   |   floating
+|   |   |   |   |   |   |   |   integer
+|   |   |   |   |   |   |   |   interval
+|   |   |   |   |   |   |   |   masked
+|   |   |   |   |   |   |   |   numpy_
+|   |   |   |   |   |   |   |   period
+|   |   |   |   |   |   |   |   sparse
+|   |   |   |   |   |   |   |   string_
+|   |   |   |   |   |   |   |   timedeltas
+|   |   |   |   |   |   |   base
+|   |   |   |   |   |   |   computation
+|   |   |   |   |   |   |   config
+|   |   |   |   |   |   |   construction
+|   |   |   |   |   |   |   copy_view
+|   |   |   |   |   |   |   |   index
+|   |   |   |   |   |   |   dtypes
+|   |   |   |   |   |   |   |   cast
+|   |   |   |   |   |   |   extension
+|   |   |   |   |   |   |   |   array_with_attr
+|   |   |   |   |   |   |   |   base
+|   |   |   |   |   |   |   |   date
+|   |   |   |   |   |   |   |   decimal
+|   |   |   |   |   |   |   |   json
+|   |   |   |   |   |   |   |   list
+|   |   |   |   |   |   |   frame
+|   |   |   |   |   |   |   |   constructors
+|   |   |   |   |   |   |   |   indexing
+|   |   |   |   |   |   |   |   methods
+|   |   |   |   |   |   |   generic
+|   |   |   |   |   |   |   groupby
+|   |   |   |   |   |   |   |   aggregate
+|   |   |   |   |   |   |   |   methods
+|   |   |   |   |   |   |   |   transform
+|   |   |   |   |   |   |   indexes
+|   |   |   |   |   |   |   |   base_class
+|   |   |   |   |   |   |   |   categorical
+|   |   |   |   |   |   |   |   datetimelike_
+|   |   |   |   |   |   |   |   datetimes
+|   |   |   |   |   |   |   |   |   methods
+|   |   |   |   |   |   |   |   interval
+|   |   |   |   |   |   |   |   multi
+|   |   |   |   |   |   |   |   numeric
+|   |   |   |   |   |   |   |   object
+|   |   |   |   |   |   |   |   period
+|   |   |   |   |   |   |   |   |   methods
+|   |   |   |   |   |   |   |   ranges
+|   |   |   |   |   |   |   |   timedeltas
+|   |   |   |   |   |   |   |   |   methods
+|   |   |   |   |   |   |   indexing
+|   |   |   |   |   |   |   |   interval
+|   |   |   |   |   |   |   |   multiindex
+|   |   |   |   |   |   |   interchange
+|   |   |   |   |   |   |   internals
+|   |   |   |   |   |   |   io
+|   |   |   |   |   |   |   |   excel
+|   |   |   |   |   |   |   |   formats
+|   |   |   |   |   |   |   |   |   style
+|   |   |   |   |   |   |   |   json
+|   |   |   |   |   |   |   |   parser
+|   |   |   |   |   |   |   |   |   common
+|   |   |   |   |   |   |   |   |   dtypes
+|   |   |   |   |   |   |   |   |   usecols
+|   |   |   |   |   |   |   |   pytables
+|   |   |   |   |   |   |   |   sas
+|   |   |   |   |   |   |   |   xml
+|   |   |   |   |   |   |   libs
+|   |   |   |   |   |   |   plotting
+|   |   |   |   |   |   |   |   frame
+|   |   |   |   |   |   |   reductions
+|   |   |   |   |   |   |   resample
+|   |   |   |   |   |   |   reshape
+|   |   |   |   |   |   |   |   concat
+|   |   |   |   |   |   |   |   merge
+|   |   |   |   |   |   |   scalar
+|   |   |   |   |   |   |   |   interval
+|   |   |   |   |   |   |   |   period
+|   |   |   |   |   |   |   |   timedelta
+|   |   |   |   |   |   |   |   |   methods
+|   |   |   |   |   |   |   |   timestamp
+|   |   |   |   |   |   |   |   |   methods
+|   |   |   |   |   |   |   series
+|   |   |   |   |   |   |   |   accessors
+|   |   |   |   |   |   |   |   indexing
+|   |   |   |   |   |   |   |   methods
+|   |   |   |   |   |   |   strings
+|   |   |   |   |   |   |   tools
+|   |   |   |   |   |   |   tseries
+|   |   |   |   |   |   |   |   frequencies
+|   |   |   |   |   |   |   |   holiday
+|   |   |   |   |   |   |   |   offsets
+|   |   |   |   |   |   |   tslibs
+|   |   |   |   |   |   |   util
+|   |   |   |   |   |   |   window
+|   |   |   |   |   |   |   |   moments
+|   |   |   |   |   |   tseries
+|   |   |   |   |   |   util
+|   |   |   |   |   |   |   version
+|   |   |   |   |   pandas-2.2.3.dist-info
+|   |   |   |   |   parso
+|   |   |   |   |   |   pgen2
+|   |   |   |   |   |   python
+|   |   |   |   |   parso-0.8.4.dist-info
+|   |   |   |   |   pexpect
+|   |   |   |   |   pexpect-4.9.0.dist-info
+|   |   |   |   |   pillow-11.0.0.dist-info
+|   |   |   |   |   pip
+|   |   |   |   |   |   _internal
+|   |   |   |   |   |   |   cli
+|   |   |   |   |   |   |   commands
+|   |   |   |   |   |   |   distributions
+|   |   |   |   |   |   |   index
+|   |   |   |   |   |   |   locations
+|   |   |   |   |   |   |   metadata
+|   |   |   |   |   |   |   |   importlib
+|   |   |   |   |   |   |   models
+|   |   |   |   |   |   |   network
+|   |   |   |   |   |   |   operations
+|   |   |   |   |   |   |   |   build
+|   |   |   |   |   |   |   |   install
+|   |   |   |   |   |   |   req
+|   |   |   |   |   |   |   resolution
+|   |   |   |   |   |   |   |   legacy
+|   |   |   |   |   |   |   |   resolvelib
+|   |   |   |   |   |   |   utils
+|   |   |   |   |   |   |   vcs
+|   |   |   |   |   |   _vendor
+|   |   |   |   |   |   |   cachecontrol
+|   |   |   |   |   |   |   |   caches
+|   |   |   |   |   |   |   certifi
+|   |   |   |   |   |   |   distlib
+|   |   |   |   |   |   |   distro
+|   |   |   |   |   |   |   idna
+|   |   |   |   |   |   |   msgpack
+|   |   |   |   |   |   |   packaging
+|   |   |   |   |   |   |   pkg_resources
+|   |   |   |   |   |   |   platformdirs
+|   |   |   |   |   |   |   pygments
+|   |   |   |   |   |   |   |   filters
+|   |   |   |   |   |   |   |   formatters
+|   |   |   |   |   |   |   |   lexers
+|   |   |   |   |   |   |   |   styles
+|   |   |   |   |   |   |   pyproject_hooks
+|   |   |   |   |   |   |   |   _in_process
+|   |   |   |   |   |   |   requests
+|   |   |   |   |   |   |   resolvelib
+|   |   |   |   |   |   |   |   compat
+|   |   |   |   |   |   |   rich
+|   |   |   |   |   |   |   tomli
+|   |   |   |   |   |   |   truststore
+|   |   |   |   |   |   |   urllib3
+|   |   |   |   |   |   |   |   contrib
+|   |   |   |   |   |   |   |   |   _securetransport
+|   |   |   |   |   |   |   |   packages
+|   |   |   |   |   |   |   |   |   backports
+|   |   |   |   |   |   |   |   util
+|   |   |   |   |   pip-24.3.1.dist-info
+|   |   |   |   |   pkg_resources
+|   |   |   |   |   |   _vendor
+|   |   |   |   |   |   |   packaging
+|   |   |   |   |   |   extern
+|   |   |   |   |   |   tests
+|   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   |   my-test-package-source
+|   |   |   |   |   platformdirs
+|   |   |   |   |   platformdirs-4.3.6.dist-info
+|   |   |   |   |   |   licenses
+|   |   |   |   |   plotly
+|   |   |   |   |   |   colors
+|   |   |   |   |   |   data
+|   |   |   |   |   |   express
+|   |   |   |   |   |   |   colors
+|   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   trendline_functions
+|   |   |   |   |   |   figure_factory
+|   |   |   |   |   |   graph_objects
+|   |   |   |   |   |   graph_objs
+|   |   |   |   |   |   |   bar
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   barpolar
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   box
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   candlestick
+|   |   |   |   |   |   |   |   decreasing
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   increasing
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   carpet
+|   |   |   |   |   |   |   |   aaxis
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   baxis
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   choropleth
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   choroplethmap
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   choroplethmapbox
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   cone
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   contour
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   contours
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   contourcarpet
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   contours
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   densitymap
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   densitymapbox
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   funnel
+|   |   |   |   |   |   |   |   connector
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   funnelarea
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   heatmap
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   heatmapgl
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   histogram
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   histogram2d
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   histogram2dcontour
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   contours
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   icicle
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   pathbar
+|   |   |   |   |   |   |   image
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   indicator
+|   |   |   |   |   |   |   |   delta
+|   |   |   |   |   |   |   |   gauge
+|   |   |   |   |   |   |   |   |   axis
+|   |   |   |   |   |   |   |   |   bar
+|   |   |   |   |   |   |   |   |   step
+|   |   |   |   |   |   |   |   |   threshold
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   number
+|   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   isosurface
+|   |   |   |   |   |   |   |   caps
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   slices
+|   |   |   |   |   |   |   layout
+|   |   |   |   |   |   |   |   annotation
+|   |   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   coloraxis
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   geo
+|   |   |   |   |   |   |   |   |   projection
+|   |   |   |   |   |   |   |   grid
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legend
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   map
+|   |   |   |   |   |   |   |   |   layer
+|   |   |   |   |   |   |   |   |   |   symbol
+|   |   |   |   |   |   |   |   mapbox
+|   |   |   |   |   |   |   |   |   layer
+|   |   |   |   |   |   |   |   |   |   symbol
+|   |   |   |   |   |   |   |   newselection
+|   |   |   |   |   |   |   |   newshape
+|   |   |   |   |   |   |   |   |   label
+|   |   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   polar
+|   |   |   |   |   |   |   |   |   angularaxis
+|   |   |   |   |   |   |   |   |   radialaxis
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   scene
+|   |   |   |   |   |   |   |   |   annotation
+|   |   |   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   camera
+|   |   |   |   |   |   |   |   |   xaxis
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   yaxis
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   zaxis
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selection
+|   |   |   |   |   |   |   |   shape
+|   |   |   |   |   |   |   |   |   label
+|   |   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   slider
+|   |   |   |   |   |   |   |   |   currentvalue
+|   |   |   |   |   |   |   |   smith
+|   |   |   |   |   |   |   |   |   imaginaryaxis
+|   |   |   |   |   |   |   |   |   realaxis
+|   |   |   |   |   |   |   |   template
+|   |   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   |   ternary
+|   |   |   |   |   |   |   |   |   aaxis
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   baxis
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   caxis
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   subtitle
+|   |   |   |   |   |   |   |   updatemenu
+|   |   |   |   |   |   |   |   xaxis
+|   |   |   |   |   |   |   |   |   rangeselector
+|   |   |   |   |   |   |   |   |   rangeslider
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   yaxis
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   mesh3d
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   ohlc
+|   |   |   |   |   |   |   |   decreasing
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   increasing
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   parcats
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   parcoords
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   pie
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   pointcloud
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   sankey
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   link
+|   |   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   node
+|   |   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   scatter
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   scatter3d
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   projection
+|   |   |   |   |   |   |   scattercarpet
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   scattergeo
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   scattergl
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   scattermap
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   scattermapbox
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   scatterpolar
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   scatterpolargl
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   scattersmith
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   scatterternary
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   splom
+|   |   |   |   |   |   |   |   dimension
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   streamtube
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   sunburst
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   surface
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   contours
+|   |   |   |   |   |   |   |   |   x
+|   |   |   |   |   |   |   |   |   y
+|   |   |   |   |   |   |   |   |   z
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   table
+|   |   |   |   |   |   |   |   cells
+|   |   |   |   |   |   |   |   header
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   treemap
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   pathbar
+|   |   |   |   |   |   |   violin
+|   |   |   |   |   |   |   |   box
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   volume
+|   |   |   |   |   |   |   |   caps
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   slices
+|   |   |   |   |   |   |   waterfall
+|   |   |   |   |   |   |   |   connector
+|   |   |   |   |   |   |   |   decreasing
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   increasing
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   totals
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   io
+|   |   |   |   |   |   matplotlylib
+|   |   |   |   |   |   |   mplexporter
+|   |   |   |   |   |   |   |   renderers
+|   |   |   |   |   |   offline
+|   |   |   |   |   |   package_data
+|   |   |   |   |   |   |   datasets
+|   |   |   |   |   |   |   templates
+|   |   |   |   |   |   plotly
+|   |   |   |   |   |   validators
+|   |   |   |   |   |   |   bar
+|   |   |   |   |   |   |   |   error_x
+|   |   |   |   |   |   |   |   error_y
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   insidetextfont
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   pattern
+|   |   |   |   |   |   |   |   outsidetextfont
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   barpolar
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   pattern
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   box
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   candlestick
+|   |   |   |   |   |   |   |   decreasing
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   increasing
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   carpet
+|   |   |   |   |   |   |   |   aaxis
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   baxis
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   choropleth
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   choroplethmap
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   choroplethmapbox
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   cone
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   lighting
+|   |   |   |   |   |   |   |   lightposition
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   contour
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   contours
+|   |   |   |   |   |   |   |   |   labelfont
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   contourcarpet
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   contours
+|   |   |   |   |   |   |   |   |   labelfont
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   densitymap
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   densitymapbox
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   frame
+|   |   |   |   |   |   |   funnel
+|   |   |   |   |   |   |   |   connector
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   insidetextfont
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   outsidetextfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   funnelarea
+|   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   insidetextfont
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   pattern
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   heatmap
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   heatmapgl
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   histogram
+|   |   |   |   |   |   |   |   cumulative
+|   |   |   |   |   |   |   |   error_x
+|   |   |   |   |   |   |   |   error_y
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   insidetextfont
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   pattern
+|   |   |   |   |   |   |   |   outsidetextfont
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   xbins
+|   |   |   |   |   |   |   |   ybins
+|   |   |   |   |   |   |   histogram2d
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   xbins
+|   |   |   |   |   |   |   |   ybins
+|   |   |   |   |   |   |   histogram2dcontour
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   contours
+|   |   |   |   |   |   |   |   |   labelfont
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   xbins
+|   |   |   |   |   |   |   |   ybins
+|   |   |   |   |   |   |   icicle
+|   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   insidetextfont
+|   |   |   |   |   |   |   |   leaf
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   pattern
+|   |   |   |   |   |   |   |   outsidetextfont
+|   |   |   |   |   |   |   |   pathbar
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   root
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   tiling
+|   |   |   |   |   |   |   image
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   indicator
+|   |   |   |   |   |   |   |   delta
+|   |   |   |   |   |   |   |   |   decreasing
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   increasing
+|   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   gauge
+|   |   |   |   |   |   |   |   |   axis
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   bar
+|   |   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   step
+|   |   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   threshold
+|   |   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   number
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   isosurface
+|   |   |   |   |   |   |   |   caps
+|   |   |   |   |   |   |   |   |   x
+|   |   |   |   |   |   |   |   |   y
+|   |   |   |   |   |   |   |   |   z
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   contour
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   lighting
+|   |   |   |   |   |   |   |   lightposition
+|   |   |   |   |   |   |   |   slices
+|   |   |   |   |   |   |   |   |   x
+|   |   |   |   |   |   |   |   |   y
+|   |   |   |   |   |   |   |   |   z
+|   |   |   |   |   |   |   |   spaceframe
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   surface
+|   |   |   |   |   |   |   layout
+|   |   |   |   |   |   |   |   activeselection
+|   |   |   |   |   |   |   |   activeshape
+|   |   |   |   |   |   |   |   annotation
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   coloraxis
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   colorscale
+|   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   geo
+|   |   |   |   |   |   |   |   |   center
+|   |   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   |   lataxis
+|   |   |   |   |   |   |   |   |   lonaxis
+|   |   |   |   |   |   |   |   |   projection
+|   |   |   |   |   |   |   |   |   |   rotation
+|   |   |   |   |   |   |   |   grid
+|   |   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   grouptitlefont
+|   |   |   |   |   |   |   |   image
+|   |   |   |   |   |   |   |   legend
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   grouptitlefont
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   map
+|   |   |   |   |   |   |   |   |   bounds
+|   |   |   |   |   |   |   |   |   center
+|   |   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   |   layer
+|   |   |   |   |   |   |   |   |   |   circle
+|   |   |   |   |   |   |   |   |   |   fill
+|   |   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   |   symbol
+|   |   |   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   mapbox
+|   |   |   |   |   |   |   |   |   bounds
+|   |   |   |   |   |   |   |   |   center
+|   |   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   |   layer
+|   |   |   |   |   |   |   |   |   |   circle
+|   |   |   |   |   |   |   |   |   |   fill
+|   |   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   |   symbol
+|   |   |   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   margin
+|   |   |   |   |   |   |   |   modebar
+|   |   |   |   |   |   |   |   newselection
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   newshape
+|   |   |   |   |   |   |   |   |   label
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   polar
+|   |   |   |   |   |   |   |   |   angularaxis
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   |   radialaxis
+|   |   |   |   |   |   |   |   |   |   autorangeoptions
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   scene
+|   |   |   |   |   |   |   |   |   annotation
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   aspectratio
+|   |   |   |   |   |   |   |   |   camera
+|   |   |   |   |   |   |   |   |   |   center
+|   |   |   |   |   |   |   |   |   |   eye
+|   |   |   |   |   |   |   |   |   |   projection
+|   |   |   |   |   |   |   |   |   |   up
+|   |   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   |   xaxis
+|   |   |   |   |   |   |   |   |   |   autorangeoptions
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   yaxis
+|   |   |   |   |   |   |   |   |   |   autorangeoptions
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   zaxis
+|   |   |   |   |   |   |   |   |   |   autorangeoptions
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   selection
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   shape
+|   |   |   |   |   |   |   |   |   label
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   slider
+|   |   |   |   |   |   |   |   |   currentvalue
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   pad
+|   |   |   |   |   |   |   |   |   step
+|   |   |   |   |   |   |   |   |   transition
+|   |   |   |   |   |   |   |   smith
+|   |   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   |   imaginaryaxis
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   realaxis
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   template
+|   |   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   |   ternary
+|   |   |   |   |   |   |   |   |   aaxis
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   baxis
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   caxis
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   pad
+|   |   |   |   |   |   |   |   |   subtitle
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   transition
+|   |   |   |   |   |   |   |   uniformtext
+|   |   |   |   |   |   |   |   updatemenu
+|   |   |   |   |   |   |   |   |   button
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   pad
+|   |   |   |   |   |   |   |   xaxis
+|   |   |   |   |   |   |   |   |   autorangeoptions
+|   |   |   |   |   |   |   |   |   minor
+|   |   |   |   |   |   |   |   |   rangebreak
+|   |   |   |   |   |   |   |   |   rangeselector
+|   |   |   |   |   |   |   |   |   |   button
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   rangeslider
+|   |   |   |   |   |   |   |   |   |   yaxis
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   yaxis
+|   |   |   |   |   |   |   |   |   autorangeoptions
+|   |   |   |   |   |   |   |   |   minor
+|   |   |   |   |   |   |   |   |   rangebreak
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   mesh3d
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   contour
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   lighting
+|   |   |   |   |   |   |   |   lightposition
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   ohlc
+|   |   |   |   |   |   |   |   decreasing
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   increasing
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   parcats
+|   |   |   |   |   |   |   |   dimension
+|   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   labelfont
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   parcoords
+|   |   |   |   |   |   |   |   dimension
+|   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   labelfont
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   rangefont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   pie
+|   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   insidetextfont
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   pattern
+|   |   |   |   |   |   |   |   outsidetextfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   pointcloud
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   border
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   sankey
+|   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   link
+|   |   |   |   |   |   |   |   |   colorscale
+|   |   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   node
+|   |   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   scatter
+|   |   |   |   |   |   |   |   error_x
+|   |   |   |   |   |   |   |   error_y
+|   |   |   |   |   |   |   |   fillgradient
+|   |   |   |   |   |   |   |   fillpattern
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   gradient
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   scatter3d
+|   |   |   |   |   |   |   |   error_x
+|   |   |   |   |   |   |   |   error_y
+|   |   |   |   |   |   |   |   error_z
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   projection
+|   |   |   |   |   |   |   |   |   x
+|   |   |   |   |   |   |   |   |   y
+|   |   |   |   |   |   |   |   |   z
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   scattercarpet
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   gradient
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   scattergeo
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   gradient
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   scattergl
+|   |   |   |   |   |   |   |   error_x
+|   |   |   |   |   |   |   |   error_y
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   scattermap
+|   |   |   |   |   |   |   |   cluster
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   scattermapbox
+|   |   |   |   |   |   |   |   cluster
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   scatterpolar
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   gradient
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   scatterpolargl
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   scattersmith
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   gradient
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   scatterternary
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   gradient
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   splom
+|   |   |   |   |   |   |   |   diagonal
+|   |   |   |   |   |   |   |   dimension
+|   |   |   |   |   |   |   |   |   axis
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   streamtube
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   lighting
+|   |   |   |   |   |   |   |   lightposition
+|   |   |   |   |   |   |   |   starts
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   sunburst
+|   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   insidetextfont
+|   |   |   |   |   |   |   |   leaf
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   pattern
+|   |   |   |   |   |   |   |   outsidetextfont
+|   |   |   |   |   |   |   |   root
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   surface
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   contours
+|   |   |   |   |   |   |   |   |   x
+|   |   |   |   |   |   |   |   |   |   project
+|   |   |   |   |   |   |   |   |   y
+|   |   |   |   |   |   |   |   |   |   project
+|   |   |   |   |   |   |   |   |   z
+|   |   |   |   |   |   |   |   |   |   project
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   lighting
+|   |   |   |   |   |   |   |   lightposition
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   table
+|   |   |   |   |   |   |   |   cells
+|   |   |   |   |   |   |   |   |   fill
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   header
+|   |   |   |   |   |   |   |   |   fill
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   treemap
+|   |   |   |   |   |   |   |   domain
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   insidetextfont
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   |   pad
+|   |   |   |   |   |   |   |   |   pattern
+|   |   |   |   |   |   |   |   outsidetextfont
+|   |   |   |   |   |   |   |   pathbar
+|   |   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   root
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   tiling
+|   |   |   |   |   |   |   violin
+|   |   |   |   |   |   |   |   box
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   meanline
+|   |   |   |   |   |   |   |   selected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   unselected
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   volume
+|   |   |   |   |   |   |   |   caps
+|   |   |   |   |   |   |   |   |   x
+|   |   |   |   |   |   |   |   |   y
+|   |   |   |   |   |   |   |   |   z
+|   |   |   |   |   |   |   |   colorbar
+|   |   |   |   |   |   |   |   |   tickfont
+|   |   |   |   |   |   |   |   |   tickformatstop
+|   |   |   |   |   |   |   |   |   title
+|   |   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   contour
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   lighting
+|   |   |   |   |   |   |   |   lightposition
+|   |   |   |   |   |   |   |   slices
+|   |   |   |   |   |   |   |   |   x
+|   |   |   |   |   |   |   |   |   y
+|   |   |   |   |   |   |   |   |   z
+|   |   |   |   |   |   |   |   spaceframe
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   surface
+|   |   |   |   |   |   |   waterfall
+|   |   |   |   |   |   |   |   connector
+|   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   decreasing
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   hoverlabel
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   increasing
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   |   |   |   insidetextfont
+|   |   |   |   |   |   |   |   legendgrouptitle
+|   |   |   |   |   |   |   |   |   font
+|   |   |   |   |   |   |   |   outsidetextfont
+|   |   |   |   |   |   |   |   stream
+|   |   |   |   |   |   |   |   textfont
+|   |   |   |   |   |   |   |   totals
+|   |   |   |   |   |   |   |   |   marker
+|   |   |   |   |   |   |   |   |   |   line
+|   |   |   |   |   plotly-5.24.1.dist-info
+|   |   |   |   |   pooch
+|   |   |   |   |   |   tests
+|   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   |   store
+|   |   |   |   |   |   |   |   |   subdir
+|   |   |   |   |   pooch-1.8.2.dist-info
+|   |   |   |   |   prompt_toolkit
+|   |   |   |   |   |   application
+|   |   |   |   |   |   clipboard
+|   |   |   |   |   |   completion
+|   |   |   |   |   |   contrib
+|   |   |   |   |   |   |   completers
+|   |   |   |   |   |   |   regular_languages
+|   |   |   |   |   |   |   ssh
+|   |   |   |   |   |   |   telnet
+|   |   |   |   |   |   eventloop
+|   |   |   |   |   |   filters
+|   |   |   |   |   |   formatted_text
+|   |   |   |   |   |   input
+|   |   |   |   |   |   key_binding
+|   |   |   |   |   |   |   bindings
+|   |   |   |   |   |   layout
+|   |   |   |   |   |   lexers
+|   |   |   |   |   |   output
+|   |   |   |   |   |   shortcuts
+|   |   |   |   |   |   |   progress_bar
+|   |   |   |   |   |   styles
+|   |   |   |   |   |   widgets
+|   |   |   |   |   prompt_toolkit-3.0.48.dist-info
+|   |   |   |   |   ptyprocess
+|   |   |   |   |   ptyprocess-0.7.0.dist-info
+|   |   |   |   |   pure_eval
+|   |   |   |   |   pure_eval-0.2.3.dist-info
+|   |   |   |   |   pygments
+|   |   |   |   |   |   filters
+|   |   |   |   |   |   formatters
+|   |   |   |   |   |   lexers
+|   |   |   |   |   |   styles
+|   |   |   |   |   pygments-2.18.0.dist-info
+|   |   |   |   |   |   licenses
+|   |   |   |   |   pynput
+|   |   |   |   |   |   _util
+|   |   |   |   |   |   keyboard
+|   |   |   |   |   |   mouse
+|   |   |   |   |   pynput-1.7.7.dist-info
+|   |   |   |   |   pyobjc_core-10.3.1.dist-info
+|   |   |   |   |   |   include
+|   |   |   |   |   pyobjc_framework_ApplicationServices-10.3.1.dist-info
+|   |   |   |   |   pyobjc_framework_Cocoa-10.3.1.dist-info
+|   |   |   |   |   pyobjc_framework_CoreText-10.3.1.dist-info
+|   |   |   |   |   pyobjc_framework_Quartz-10.3.1.dist-info
+|   |   |   |   |   pyparsing
+|   |   |   |   |   |   diagram
+|   |   |   |   |   pyparsing-3.2.0.dist-info
+|   |   |   |   |   python_dateutil-2.9.0.post0.dist-info
+|   |   |   |   |   pytz
+|   |   |   |   |   |   zoneinfo
+|   |   |   |   |   |   |   Africa
+|   |   |   |   |   |   |   America
+|   |   |   |   |   |   |   |   Argentina
+|   |   |   |   |   |   |   |   Indiana
+|   |   |   |   |   |   |   |   Kentucky
+|   |   |   |   |   |   |   |   North_Dakota
+|   |   |   |   |   |   |   Antarctica
+|   |   |   |   |   |   |   Arctic
+|   |   |   |   |   |   |   Asia
+|   |   |   |   |   |   |   Atlantic
+|   |   |   |   |   |   |   Australia
+|   |   |   |   |   |   |   Brazil
+|   |   |   |   |   |   |   Canada
+|   |   |   |   |   |   |   Chile
+|   |   |   |   |   |   |   Etc
+|   |   |   |   |   |   |   Europe
+|   |   |   |   |   |   |   Indian
+|   |   |   |   |   |   |   Mexico
+|   |   |   |   |   |   |   Pacific
+|   |   |   |   |   |   |   US
+|   |   |   |   |   pytz-2024.2.dist-info
+|   |   |   |   |   pyvirtualdisplay
+|   |   |   |   |   |   examples
+|   |   |   |   |   pyvista
+|   |   |   |   |   |   core
+|   |   |   |   |   |   |   _typing_core
+|   |   |   |   |   |   |   _validation
+|   |   |   |   |   |   |   filters
+|   |   |   |   |   |   |   utilities
+|   |   |   |   |   |   demos
+|   |   |   |   |   |   examples
+|   |   |   |   |   |   ext
+|   |   |   |   |   |   jupyter
+|   |   |   |   |   |   plotting
+|   |   |   |   |   |   |   plotting
+|   |   |   |   |   |   |   utilities
+|   |   |   |   |   |   trame
+|   |   |   |   |   |   |   ui
+|   |   |   |   |   |   utilities
+|   |   |   |   |   pyvista-0.44.1.dist-info
+|   |   |   |   |   pyvistaqt
+|   |   |   |   |   |   data
+|   |   |   |   |   pyvistaqt-0.11.1.dist-info
+|   |   |   |   |   qtpy
+|   |   |   |   |   |   tests
+|   |   |   |   |   |   |   optional_deps
+|   |   |   |   |   requests
+|   |   |   |   |   requests-2.32.3.dist-info
+|   |   |   |   |   retrying-1.3.4.dist-info
+|   |   |   |   |   scikit_learn-1.5.2.dist-info
+|   |   |   |   |   scipy
+|   |   |   |   |   |   _lib
+|   |   |   |   |   |   |   _uarray
+|   |   |   |   |   |   |   array_api_compat
+|   |   |   |   |   |   |   |   common
+|   |   |   |   |   |   |   |   cupy
+|   |   |   |   |   |   |   |   numpy
+|   |   |   |   |   |   |   |   torch
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   cluster
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   constants
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   datasets
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   fft
+|   |   |   |   |   |   |   _pocketfft
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   fftpack
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   integrate
+|   |   |   |   |   |   |   _ivp
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   interpolate
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   io
+|   |   |   |   |   |   |   _fast_matrix_market
+|   |   |   |   |   |   |   _harwell_boeing
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   arff
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   matlab
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   linalg
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   misc
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   ndimage
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   odr
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   optimize
+|   |   |   |   |   |   |   _highs
+|   |   |   |   |   |   |   |   src
+|   |   |   |   |   |   |   |   |   cython
+|   |   |   |   |   |   |   _lsq
+|   |   |   |   |   |   |   _shgo_lib
+|   |   |   |   |   |   |   _trlib
+|   |   |   |   |   |   |   _trustregion_constr
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   cython_optimize
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   signal
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   windows
+|   |   |   |   |   |   sparse
+|   |   |   |   |   |   |   csgraph
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   linalg
+|   |   |   |   |   |   |   |   _dsolve
+|   |   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   _eigen
+|   |   |   |   |   |   |   |   |   arpack
+|   |   |   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   |   lobpcg
+|   |   |   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   _isolve
+|   |   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   _propack
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   spatial
+|   |   |   |   |   |   |   qhull_src
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   transform
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   special
+|   |   |   |   |   |   |   _precompute
+|   |   |   |   |   |   |   special
+|   |   |   |   |   |   |   |   cephes
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   stats
+|   |   |   |   |   |   |   _boost
+|   |   |   |   |   |   |   _levy_stable
+|   |   |   |   |   |   |   _rcont
+|   |   |   |   |   |   |   _unuran
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   |   |   levy_stable
+|   |   |   |   |   |   |   |   |   nist_anova
+|   |   |   |   |   |   |   |   |   nist_linregress
+|   |   |   |   |   scipy-1.13.1.dist-info
+|   |   |   |   |   scooby
+|   |   |   |   |   scooby-0.10.0.dist-info
+|   |   |   |   |   setuptools
+|   |   |   |   |   |   _distutils
+|   |   |   |   |   |   |   command
+|   |   |   |   |   |   _vendor
+|   |   |   |   |   |   |   more_itertools
+|   |   |   |   |   |   |   packaging
+|   |   |   |   |   |   command
+|   |   |   |   |   |   extern
+|   |   |   |   |   setuptools-58.0.4.dist-info
+|   |   |   |   |   six-1.16.0.dist-info
+|   |   |   |   |   sklearn
+|   |   |   |   |   |   __check_build
+|   |   |   |   |   |   _build_utils
+|   |   |   |   |   |   _loss
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   cluster
+|   |   |   |   |   |   |   _hdbscan
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   compose
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   covariance
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   cross_decomposition
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   datasets
+|   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   descr
+|   |   |   |   |   |   |   images
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   |   data
+|   |   |   |   |   |   |   |   |   openml
+|   |   |   |   |   |   |   |   |   |   id_1
+|   |   |   |   |   |   |   |   |   |   id_1119
+|   |   |   |   |   |   |   |   |   |   id_1590
+|   |   |   |   |   |   |   |   |   |   id_2
+|   |   |   |   |   |   |   |   |   |   id_292
+|   |   |   |   |   |   |   |   |   |   id_3
+|   |   |   |   |   |   |   |   |   |   id_40589
+|   |   |   |   |   |   |   |   |   |   id_40675
+|   |   |   |   |   |   |   |   |   |   id_40945
+|   |   |   |   |   |   |   |   |   |   id_40966
+|   |   |   |   |   |   |   |   |   |   id_42074
+|   |   |   |   |   |   |   |   |   |   id_42585
+|   |   |   |   |   |   |   |   |   |   id_561
+|   |   |   |   |   |   |   |   |   |   id_61
+|   |   |   |   |   |   |   |   |   |   id_62
+|   |   |   |   |   |   decomposition
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   ensemble
+|   |   |   |   |   |   |   _hist_gradient_boosting
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   experimental
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   externals
+|   |   |   |   |   |   |   _packaging
+|   |   |   |   |   |   |   _scipy
+|   |   |   |   |   |   |   |   sparse
+|   |   |   |   |   |   |   |   |   csgraph
+|   |   |   |   |   |   feature_extraction
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   feature_selection
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   gaussian_process
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   impute
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   inspection
+|   |   |   |   |   |   |   _plot
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   linear_model
+|   |   |   |   |   |   |   _glm
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   manifold
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   metrics
+|   |   |   |   |   |   |   _pairwise_distances_reduction
+|   |   |   |   |   |   |   _plot
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   cluster
+|   |   |   |   |   |   |   |   tests
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   mixture
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   model_selection
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   neighbors
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   neural_network
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   preprocessing
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   semi_supervised
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   svm
+|   |   |   |   |   |   |   src
+|   |   |   |   |   |   |   |   liblinear
+|   |   |   |   |   |   |   |   libsvm
+|   |   |   |   |   |   |   |   newrand
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   tests
+|   |   |   |   |   |   tree
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   |   utils
+|   |   |   |   |   |   |   src
+|   |   |   |   |   |   |   tests
+|   |   |   |   |   stack_data
+|   |   |   |   |   stack_data-0.6.3.dist-info
+|   |   |   |   |   tenacity
+|   |   |   |   |   |   asyncio
+|   |   |   |   |   tenacity-9.0.0.dist-info
+|   |   |   |   |   threadpoolctl-3.5.0.dist-info
+|   |   |   |   |   traitlets
+|   |   |   |   |   |   config
+|   |   |   |   |   |   tests
+|   |   |   |   |   |   utils
+|   |   |   |   |   traitlets-5.14.3.dist-info
+|   |   |   |   |   |   licenses
+|   |   |   |   |   typing_extensions-4.12.2.dist-info
+|   |   |   |   |   tzdata
+|   |   |   |   |   |   zoneinfo
+|   |   |   |   |   |   |   Africa
+|   |   |   |   |   |   |   America
+|   |   |   |   |   |   |   |   Argentina
+|   |   |   |   |   |   |   |   Indiana
+|   |   |   |   |   |   |   |   Kentucky
+|   |   |   |   |   |   |   |   North_Dakota
+|   |   |   |   |   |   |   Antarctica
+|   |   |   |   |   |   |   Arctic
+|   |   |   |   |   |   |   Asia
+|   |   |   |   |   |   |   Atlantic
+|   |   |   |   |   |   |   Australia
+|   |   |   |   |   |   |   Brazil
+|   |   |   |   |   |   |   Canada
+|   |   |   |   |   |   |   Chile
+|   |   |   |   |   |   |   Etc
+|   |   |   |   |   |   |   Europe
+|   |   |   |   |   |   |   Indian
+|   |   |   |   |   |   |   Mexico
+|   |   |   |   |   |   |   Pacific
+|   |   |   |   |   |   |   US
+|   |   |   |   |   tzdata-2024.2.dist-info
+|   |   |   |   |   urllib3
+|   |   |   |   |   |   contrib
+|   |   |   |   |   |   |   emscripten
+|   |   |   |   |   |   http2
+|   |   |   |   |   |   util
+|   |   |   |   |   urllib3-2.2.3.dist-info
+|   |   |   |   |   |   licenses
+|   |   |   |   |   vtk-9.3.1.dist-info
+|   |   |   |   |   vtkmodules
+|   |   |   |   |   |   gtk
+|   |   |   |   |   |   numpy_interface
+|   |   |   |   |   |   qt
+|   |   |   |   |   |   test
+|   |   |   |   |   |   tk
+|   |   |   |   |   |   util
+|   |   |   |   |   |   web
+|   |   |   |   |   |   wx
+|   |   |   |   |   wcwidth
+|   |   |   |   |   wcwidth-0.2.13.dist-info
+|   |   |   |   |   werkzeug
+|   |   |   |   |   |   datastructures
+|   |   |   |   |   |   debug
+|   |   |   |   |   |   |   shared
+|   |   |   |   |   |   middleware
+|   |   |   |   |   |   routing
+|   |   |   |   |   |   sansio
+|   |   |   |   |   |   wrappers
+|   |   |   |   |   werkzeug-3.0.6.dist-info
+|   |   |   |   |   zipp
+|   |   |   |   |   |   compat
+|   |   |   |   |   zipp-3.20.2.dist-info
+|   |   share
+|   |   |   jupyter
+|   |   |   |   lab
+|   |   |   |   |   extensions
+|   |   |   |   labextensions
+|   |   |   |   |   jupyterlab-plotly
+|   |   |   |   |   |   static
+|   |   |   |   nbextensions
+|   |   |   |   |   dash
+|   |   |   |   |   jupyterlab-plotly
+|   |   |   man
+|   |   |   |   man1
